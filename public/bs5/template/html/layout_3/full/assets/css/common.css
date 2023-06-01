@@ -1,0 +1,11 @@
+:root {
+    --green: #60A748;
+    --gray: gray;
+}
+
+.background-green {
+    background-color: var(--green)!important;
+}
+.background-gray {
+    background-color: var(--gray)!important;
+}
