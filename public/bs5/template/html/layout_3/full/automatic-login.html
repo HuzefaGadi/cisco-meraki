@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Cisko Meraki</title>
+	<title>Cisco Meraki</title>
 
 	<!-- Global stylesheets -->
 	<link href="../../../assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
@@ -19,7 +19,6 @@
 	<!-- Core JS files -->
 	<script src="../../../assets/demo/demo_configurator.js"></script>
 	<script src="../../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-	<script src="../../../../../bs4/Template/global_assets/js/main/jquery.min.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
@@ -28,7 +27,6 @@
 
 	<script src="assets/js/app.js"></script>
 	<script src="../../../assets/demo/pages/dashboard.js"></script>
-	<script src="../../../assets/demo/pages/ion_sliders.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/streamgraph.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/sparklines.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/lines.js"></script>	
@@ -39,7 +37,6 @@
 	<script src="../../../assets/demo/charts/pages/dashboard/heatmaps.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/pies.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/bullets.js"></script>
-    <script src="../../../../../bs4/Template/global_assets/js/plugins/sliders/ion_rangeslider.min.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -541,7 +538,7 @@
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
-					<span class="fw-normal">General Settings</span>
+					<span class="fw-normal">Automatic Login</span>
 				</h4>
 
 				<a href="#page_header" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -687,7 +684,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="general_settings.html" class="nav-link active">
+							<a href="general_settings.html" class="nav-link">
 								<i class="ph-house"></i>
 								<span>
 									General Settings
@@ -702,12 +699,12 @@
 							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
 								<li class="nav-item"><a href="index.html" class="nav-link">Data Limits</a></li>
 								<li class="nav-item"><a href="meraki-settings.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="camera-settings.html" class="nav-link active">Camera Settings</a></li>
+								<li class="nav-item"><a href="camera-settings.html" class="nav-link">Camera Settings</a></li>
 								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="general_settings.html" class="nav-link">
+							<a href="access-point-location.html" class="nav-link">
 								<i class="ph-house"></i>
 								<span>
 									Access Point Location(s)
@@ -727,7 +724,7 @@
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="general_settings.html" class="nav-link">
+							<a href="secure-guest-wifi.html" class="nav-link">
 								<i class="ph-house"></i>
 								<span>
 									Secure Guest Wi-Fi
@@ -735,7 +732,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="general_settings.html" class="nav-link">
+							<a href="automatic-login.html" class="nav-link active">
 								<i class="ph-house"></i>
 								<span>
 									Automatic Login
@@ -1086,154 +1083,94 @@
 		</div>
 		<!-- /main sidebar -->
 
-
 		<!-- Main content -->
 		<div class="content-wrapper">
 
 			<!-- Content area -->
 			<div class="content">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="fs-4 fw-bold">Edit your settings</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <!-- Left side -->
-                            <div class="col-sm-6">
-                                <div class="fs-5 fw-semibold">Your Details</div>
 
-                                <div class="my-3">
-                                    <label for="name" class="form-label">Network Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Network Name" disabled>
-                                </div>
-                                <div class="my-3">
-                                    <label for="administratorName" class="form-label">Administrator Name</label>
-                                    <input type="text" class="form-control" id="administratorName" placeholder="Administrator Name" disabled>
-                                </div>
-                                <div class="my-3">
-                                    <label for="Address" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="Address" placeholder="Address" disabled>
-                                </div>
-                                <div class="my-3">
-                                    <label for="Country" class="form-label">Country</label>
-                                    <input type="text" class="form-control" id="Country" placeholder="Country" disabled>
-                                </div>
-                                <div class="my-3">
-                                    <label for="Telephone" class="form-label">Telephone</label>
-                                    <input type="text" class="form-control" id="Telephone" placeholder="Telephone" disabled>
-                                </div>
-                                <div class="my-3">
-                                    <label for="EmailAddress" class="form-label">Email Address</label>
-                                    <input type="text" class="form-control" id="EmailAddress" placeholder="Email Address" disabled>
-                                </div>
+				<!-- Main charts -->
+				<div class="row">
+					<div class="card">
+                        <div class="card-header">
+                            <h5 class="fs-4 fw-bold">Edit your settings</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="fs-6 fw-semibold mt-4">Wi-Fi Automatic Login*</div>
+                            <div class="fs-6 fw-semibold mt-4">Auto Login*</div>
 
-                                <div class="border-bottom mt-3 mb-4"></div>
-                                <div class="fs-5 fw-semibold">Mailing List / Marketing Provider</div>
-
-                                <div class="my-3">
-                                    <label for="EmailAddress" class="form-label">API - Mailing Provider</label>
-                                    <!-- <input type="text" class="form-control" id="EmailAddress" placeholder="Email Address" disabled> -->
-                                    <select class="form-select" aria-label="select example" disabled>
-                                        <option selected>Not Used</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-
-                                <div class="border-bottom mt-3 mb-4"></div>
-                            </div>
-                            <!-- /Left side -->
-
-                            <!-- Right side -->
-                            <div class="col-sm-6">
-                                <div class="fs-5 fw-semibold">Duration Setting(s)</div>
-                                <div class="mt-3 mb-4">
-                                    Alter the duration via the slider(s) or by entering an amount into the boxes provided.
-                                </div>
-
-                                <div class="fs-6 fw-semibold">Login Duration(seconds)</div>
-                                <div class="mb-4">
-                                    Length of period in seconds you wish to allow the guest/user access onto the wifi.
-
-                                    <div class="row mt-3">
-                                        <div class="col-sm-6 p-0">
-                                            <label for="name" class="form-label fw-semibold fs-sm">HOURS</label>
-                                            <input type="text" class="form-control ion-pips-height-helper" id="hours-slider" data-fouc>
-                                        </div>
-                                        <div class="col-sm-6 p-0">
-                                            <label for="name" class="form-label fw-semibold fs-sm">DAYS</label>
-                                            <input type="text" class="form-control ion-pips-height-helper" id="days-slider" data-fouc>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-sm-6 p-0">
-                                            <input type="text" class="form-control" placeholder="3600" disabled/>
-                                        </div>
-                                        <div class="col-sm-6 p-0">
-                                            <input type="text" class="form-control" placeholder="1 Hour" disabled/>
-                                        </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div>
+                                        This feature checks if a user has previouslly logged in. If they have they are allowed onto the network without having to enter the length information again
+                                        <span class="fw-semibold">(see Auto Login Days)</span>
                                     </div>
 
+                                    <div>
+                                        If the user has previously logged in they are asked to enter their details as normal.
+                                    </div>
+                                    <div class="border-bottom mt-3 mb-4"></div>
+
+                                    <div class="fs-6 fw-semibold mt-4">Auto Login Reporting</div>
+                                    <p class="mt-4">
+                                        If you wish to keep a record of everytime a user is automatically signed on using the Auto Login feature select <span class="fw-semibold">Yes.</span>
+                                    </p>
+                                    <p class="mt-4">
+                                        This is recorded into your Export table for your records.
+                                    </p>
+                                    <p class="mt-4">
+                                        Also enabling this feature could override the Auto Login Days feature and give you an indefinate Auto Login setup.
+                                    </p>
+                                    <div class="border-bottom mt-3 mb-4"></div>
+
+                                    <div class="fs-6 fw-semibold mt-4">Auto Login Days</div>
                                     
-                                </div>
+                                    <p class="mt-4">
+                                        The number of Days before the Auto Login feature expires and the user has to enter their details again.
+                                    </p>
+                                    <p class="mt-4">
+                                        Checks when the user last logged in and if it was more than the setting here asks them to re-enter their details.
+                                    </p>
 
-                                <div class="border-bottom mt-3 mb-4"></div>
-
-                                <div class="fs-6 fw-semibold">Prevent Guest Device Re-Access</div>
-                                <div class="mb-4">
-                                    If enabled, restricts the device so it can not login again until the time period below has passed.
-
-                                    <div class="my-3">
-                                        <label for="EmailAddress" class="form-label">Prevent Enabled</label>
-                                        <select class="form-select" aria-label="select example" disabled>
-                                            <option value="0" selected>No</option>
-                                            <option value="1">Yes</option>
-                                        </select>
+                                    <div class="mt-4">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label for="EmailAddress" class="form-label">Auto Login</label>
+                                                    <select class="form-select" aria-label="select example" disabled>
+                                                        <option value="0" selected>No</option>
+                                                        <option value="1">Yes</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="EmailAddress" class="form-label">Auto Login Reporting</label>
+                                                    <select class="form-select" aria-label="select example" disabled>
+                                                        <option value="0" selected>Yes</option>
+                                                        <option value="1">No</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="EmailAddress" class="form-label">Auto Login Days</label>
+                                                    <select class="form-select" aria-label="select example" disabled>
+                                                        <option value="0" selected>7</option>
+                                                        <option value="1">Yes</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row-reverse mt-4">
+                                        <button type="button" class="btn background-green text-light">
+                                            <i class="ph-check"></i>
+                                            Update
+                                        </button>
                                     </div>
                                 </div>
-
-                                <div class="border-bottom my-4"></div>
-
-                                <div class="fs-6 fw-semibold">VIP By Pass Mac Address</div>
-                                <div class="mb-4">
-                                    Gives specific MAC Address automatic access without having to enter any details into the system.
-
-                                    <div class="my-3">
-                                        <label for="EmailAddress" class="form-label">VIP Enabled</label>
-                                        <select class="form-select" aria-label="select example" disabled>
-                                            <option value="0" selected>No</option>
-                                            <option value="1">Yes</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="border-bottom my-4"></div>
-
-                                <div class="fs-6 fw-semibold mb-4">Splash Access - Advanced Analytics</div>
-                                <div class="mb-4">
-                                    Splash Access -Analytics (Enable) - Requires you to have an advanced account more details.
-
-                                    <div class="my-3">
-                                        <select class="form-select" aria-label="select example" disabled>
-                                            <option value="0" selected>No</option>
-                                            <option value="1">Yes</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Left side -->
-
-                            <div class="d-flex flex-row-reverse">
-                                <button type="button" class="btn background-green text-light">
-                                    <i class="ph-check"></i>
-                                    Update
-                                </button>
                             </div>
                         </div>
-                    </div>
-                </div>
-
+					</div>
+				</div>
+				<!-- /main charts -->
 			</div>
 			<!-- /content area -->
 
