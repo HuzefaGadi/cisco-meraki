@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Cisko Meraki</title>
+	<title>Cisco Meraki</title>
 
 	<!-- Global stylesheets -->
 	<link href="../../../assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
@@ -24,6 +24,8 @@
 	<!-- Theme JS files -->
 	<script src="../../../assets/js/vendor/visualization/d3/d3.min.js"></script>
 	<script src="../../../assets/js/vendor/visualization/d3/d3_tooltip.js"></script>
+	<script src="../../../assets/js/vendor/visualization/echarts/echarts.min.js"></script>
+    <script src="../../../../../bs4/Template/global_assets/js/plugins/visualization/echarts/echarts.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
 	<script src="../../../assets/demo/pages/dashboard.js"></script>
@@ -37,6 +39,7 @@
 	<script src="../../../assets/demo/charts/pages/dashboard/heatmaps.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/pies.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/bullets.js"></script>
+	<script src="../../../assets/demo/charts/pages/dashboard/chart.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -538,7 +541,7 @@
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
-					Home - <span class="fw-normal">Access Point Location(s)</span>
+					Home - <span class="fw-normal">Marketing Signups / Removals</span>
 				</h4>
 
 				<a href="#page_header" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -698,13 +701,13 @@
 							</a>
 							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
 								<li class="nav-item"><a href="index.html" class="nav-link">Data Limits</a></li>
-								<li class="nav-item"><a href="./meraki-settings.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="../full/camera-settings.html" class="nav-link">Camera Settings</a></li>
+								<li class="nav-item"><a href="meraki-settings.html" class="nav-link">Meraki API Settings</a></li>
+								<li class="nav-item"><a href="camera-settings.html" class="nav-link">Camera Settings</a></li>
 								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="access-point-location.html" class="nav-link active">
+							<a href="access-point-location.html" class="nav-link">
 								<i class="ph-house"></i>
 								<span>
 									Access Point Location(s)
@@ -724,7 +727,7 @@
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="general_settings.html" class="nav-link">
+							<a href="secure-guest-wifi.html" class="nav-link">
 								<i class="ph-house"></i>
 								<span>
 									Secure Guest Wi-Fi
@@ -732,7 +735,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="general_settings.html" class="nav-link">
+							<a href="automatic-login.html" class="nav-link">
 								<i class="ph-house"></i>
 								<span>
 									Automatic Login
@@ -740,15 +743,17 @@
 							</a>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
+							<a href="#" class="nav-link active">
 								<i class="ph-layout"></i>
 								<span>Marketing / Social / Digital</span>
 							</a>
 							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Data Limits</a></li>
-								<li class="nav-item"><a href="../../layout_2/full/index.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="index.html" class="nav-link active">Camera Settings</a></li>
-								<li class="nav-item"><a href="../../layout_4/full/index.html" class="nav-link">System / Verification Settings</a></li>
+								<li class="nav-item"><a href="email_system.html" class="nav-link">Email System</a></li>
+								<li class="nav-item"><a href="advert-system.html" class="nav-link">Advert System</a></li>
+								<li class="nav-item"><a href="marketing.html" class="nav-link active">Marketing Signups/Removals</a></li>
+								<li class="nav-item"><a href="../../layout_4/full/index.html" class="nav-link">Social Media</a></li>
+								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Digital Displays Feed</a></li>
+								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Valid names list</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
@@ -1083,152 +1088,124 @@
 		</div>
 		<!-- /main sidebar -->
 
-
 		<!-- Main content -->
 		<div class="content-wrapper">
 
 			<!-- Content area -->
 			<div class="content">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="fs-4 fw-bold">Edit your Access Point Location(s)</h5>
-                    </div>
 
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-12 overflow-auto">
+				<!-- Main charts -->
+				<div class="row">
+                    
+
+					<div class="card">
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <div class="chart has-fixed-height" id="last-15-days-marketing"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="fs-6 fw-semibold mt-2 mb-4">
+                                        Marketing Signups & Removals
+                                    </div>
+
+                                    <label for="EmailAddress" class="form-label fs-6 fw-semibold">Remove all data help on Email Address</label>
+                                    <div style="width: 320px" class="input-group">
+                                        <input type="text" class="form-control" id="EmailAddress" placeholder="Email Address">
+                                        <i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-trash bg-danger text-white fw-bold fs-4 d-flex align-items-center justify-content-center"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group mt-2 mb-3">
+                                        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <i class="input-group-text ph-magnifying-glass" id="basic-addon2"></i>
+                                    </div>
+
+                                    
+                                    <div class="w-75">
+                                        <label for="TimeZone" class="form-label fw-semibold">TimeZone</label>
+                                        <select class="form-select form-select-lg" id="TimeZone" aria-label="select example">
+                                            <option value="0" selected>(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                                            <option value="1">Yes</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-4 d-flex align-items-end">
+                                        <div class="w-75">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="TimeZone" class="form-label fw-semibold">Date from (D/M/Y)</label>
+                                                    <div class="input-group">
+                                                        <select style="max-width: 75px" class="form-select" id="TimeZone" aria-label="select example">
+                                                            <option value="0" selected>1</option>
+                                                            <option value="1">2</option>
+                                                        </select>
+                                                        <select style="max-width: 75px" class="form-select form-select-lg" id="TimeZone" aria-label="select example">
+                                                            <option value="0" selected>4</option>
+                                                            <option value="1">5</option>
+                                                        </select>
+                                                        <select class="form-select form-select-lg" id="TimeZone" aria-label="select example">
+                                                            <option value="0" selected>2023</option>
+                                                            <option value="1">2024</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="TimeZone" class="form-label fw-semibold">Date to (D/M/Y)</label>
+                                                    <div class="input-group">
+                                                        <select style="max-width: 75px" class="form-select" id="TimeZone" aria-label="select example">
+                                                            <option value="0" selected>1</option>
+                                                            <option value="1">2</option>
+                                                        </select>
+                                                        <select style="max-width: 75px" class="form-select form-select-lg" id="TimeZone" aria-label="select example">
+                                                            <option value="0" selected>4</option>
+                                                            <option value="1">5</option>
+                                                        </select>
+                                                        <select class="form-select form-select-lg" id="TimeZone" aria-label="select example">
+                                                            <option value="0" selected>2023</option>
+                                                            <option value="1">2024</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-25">
+                                            <button type="button" class="ms-3 btn background-green text-light">
+                                                Export
+                                                <i class="ph-arrow-circle-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
 								<table class="table table-borderless">
 									<thead>
 										<tr class="text-light background-gray">
-											<th scope="col">#</th>
-											<th scope="col">AP Mac Address</th>
-											<th scope="col">Location / Ref</th>
-											<th scope="col">
-												<div>Forwarding URL</div>
-												<div>(Inc http://)</div>
-											</th>
-											<th scope="col">Front Page Advert</th>
-											<th scope="col">Logo / Background Override</th>
-											<th scope="col"></th>
+											<th scope="col">id</th>
+											<th scope="col">Email</th>
+											<th scope="col">Joined</th>
+											<th scope="col">Location</th>
+											<th scope="col">Remove request</th>
+											<th scope="col">Status</th>
 										</tr>
 									</thead>
-									<tbody>
-										<tr style="height: 40px">
-											<td>1</td>
-											<td>
-												<input type="text" placeholder="00:18:0a:12:34:56" disabled />
-											</td>
-											<td>
-												<input type="text" placeholder="Location reference or name" disabled />
-											</td>
-											<td>
-												<input type="text" placeholder="Forwarding URL" disabled />
-											</td>
-											<td style="min-width: 300px;" class="d-flex justify-content-between">
-												<input type="text" placeholder="Front Page Advert Image" disabled />
-												<i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-upload background-green text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
-											</td>
-											<td>
-												<div style="min-width: 300px;" class="d-flex justify-content-between">
-													<input type="text" placeholder="Logo Override Image" disabled />
-													<i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-upload background-green text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
-												</div>
-											</td>
-										</tr>
-										<tr style="height: 40px">
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td>
-												<input type="text" placeholder="Advert Link http://" disabled />
-											</td>
-											<td>
-												<div style="min-width: 300px;" class="d-flex justify-content-between">
-													<input type="text" placeholder="Background Override Image" disabled />
-													<i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-trash bg-danger text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+                                    <tbody>
+                                        <td>
+                                            Sorry no records found
+                                        </td>
+                                    </tbody>
+                                </table>
+                                <div class="w-auto p-0 rounded d-flex">
+                                    <i class="ph-arrow-left p-2 fs-2 fw-bold border"></i>
+                                    <i class="ph-arrow-right p-2 fs-2 fw-bold border"></i>
+                                </div>
                             </div>
-							<div class="d-flex flex-row-reverse mt-4">
-								<button type="button" class="btn background-green text-light">
-									<i class="ph-check"></i>
-									Update
-								</button>
-							</div>
-
-							<div class="w-auto p-0 border rounded d-flex">
-								<i class="ph-arrow-left p-2 fs-2 fw-bold"></i>
-								<div class="px-3 fs-2 fw-bold background-green">1</div>
-								<i class="ph-arrow-right p-2 fs-2 fw-bold"></i>
-							</div>
                         </div>
+					</div>
 
-                        <div class="row mt-4">
-							<h5 class="fs-4 fw-bold">Add a new Location</h5>
-                            <div class="col-sm-12 overflow-auto">
-								<table class="table table-borderless">
-									<thead>
-										<tr class="text-light background-gray">
-											<th scope="col">AP Mac Address</th>
-											<th scope="col">Location / Ref</th>
-											<th scope="col">
-												<div>Forwarding URL</div>
-												<div>(Inc http://)</div>
-											</th>
-											<th scope="col">Front Page Advert</th>
-											<th scope="col">Logo / Background Override</th>
-											<th scope="col"></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr style="height: 40px">
-											<td>
-												<input type="text" placeholder="i.e 11:22:ab:56:0F:33" disabled />
-											</td>
-											<td>
-												<input type="text" placeholder="i.e Preston Store Upstairs" disabled />
-											</td>
-											<td>
-												<input type="text" placeholder="i.e https://www.yourcompany.com" disabled />
-											</td>
-											<td style="min-width: 300px;" class="d-flex justify-content-between">
-												<input type="text" placeholder="Front Page Advert Image" disabled />
-												<i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-upload background-green text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
-											</td>
-											<td>
-												<div style="min-width: 300px;" class="d-flex justify-content-between">
-													<input type="text" placeholder="Logo Override Image" disabled />
-													<i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-upload background-green text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
-												</div>
-											</td>
-										</tr>
-										<tr style="height: 40px">
-											<td></td>
-											<td></td>
-											<td></td>
-											<td>
-												<input type="text" placeholder="Advert Link http://" disabled />
-											</td>
-											<td>
-												<input type="text" placeholder="Background Override Image" disabled />
-											</td>
-										</tr>
-									</tbody>
-								</table>
-                            </div>
-							<div class="d-flex flex-row-reverse mt-4">
-								<button type="button" class="btn background-green text-light">
-									<i class="ph-plus"></i>
-									Add
-								</button>
-							</div>
-                        </div>
-                    </div>
-                </div>
+				</div>
+				<!-- /main charts -->
 			</div>
 			<!-- /content area -->
 

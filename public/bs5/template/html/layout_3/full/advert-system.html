@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Cisko Meraki</title>
+	<title>Cisco Meraki</title>
 
 	<!-- Global stylesheets -->
 	<link href="../../../assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
@@ -538,7 +538,7 @@
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
-					Home - <span class="fw-normal">Access Point Location(s)</span>
+					Home - <span class="fw-normal">Advert System</span>
 				</h4>
 
 				<a href="#page_header" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -698,13 +698,13 @@
 							</a>
 							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
 								<li class="nav-item"><a href="index.html" class="nav-link">Data Limits</a></li>
-								<li class="nav-item"><a href="./meraki-settings.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="../full/camera-settings.html" class="nav-link">Camera Settings</a></li>
+								<li class="nav-item"><a href="meraki-settings.html" class="nav-link">Meraki API Settings</a></li>
+								<li class="nav-item"><a href="camera-settings.html" class="nav-link">Camera Settings</a></li>
 								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="access-point-location.html" class="nav-link active">
+							<a href="access-point-location.html" class="nav-link">
 								<i class="ph-house"></i>
 								<span>
 									Access Point Location(s)
@@ -724,7 +724,7 @@
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a href="general_settings.html" class="nav-link">
+							<a href="secure-guest-wifi.html" class="nav-link">
 								<i class="ph-house"></i>
 								<span>
 									Secure Guest Wi-Fi
@@ -732,7 +732,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="general_settings.html" class="nav-link">
+							<a href="automatic-login.html" class="nav-link">
 								<i class="ph-house"></i>
 								<span>
 									Automatic Login
@@ -740,15 +740,17 @@
 							</a>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
+							<a href="#" class="nav-link  active">
 								<i class="ph-layout"></i>
 								<span>Marketing / Social / Digital</span>
 							</a>
 							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Data Limits</a></li>
-								<li class="nav-item"><a href="../../layout_2/full/index.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="index.html" class="nav-link active">Camera Settings</a></li>
-								<li class="nav-item"><a href="../../layout_4/full/index.html" class="nav-link">System / Verification Settings</a></li>
+								<li class="nav-item"><a href="email_system.html" class="nav-link">Email System</a></li>
+								<li class="nav-item"><a href="advert-system.html" class="nav-link active">Advert System</a></li>
+								<li class="nav-item"><a href="index.html" class="nav-link">Marketing Signups/Removals</a></li>
+								<li class="nav-item"><a href="../../layout_4/full/index.html" class="nav-link">Social Media</a></li>
+								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Digital Displays Feed</a></li>
+								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Valid names list</a></li>
 							</ul>
 						</li>
 						<li class="nav-item">
@@ -1083,149 +1085,83 @@
 		</div>
 		<!-- /main sidebar -->
 
-
 		<!-- Main content -->
 		<div class="content-wrapper">
 
 			<!-- Content area -->
 			<div class="content">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="fs-4 fw-bold">Edit your Access Point Location(s)</h5>
-                    </div>
-
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-12 overflow-auto">
-								<table class="table table-borderless">
-									<thead>
-										<tr class="text-light background-gray">
-											<th scope="col">#</th>
-											<th scope="col">AP Mac Address</th>
-											<th scope="col">Location / Ref</th>
-											<th scope="col">
-												<div>Forwarding URL</div>
-												<div>(Inc http://)</div>
-											</th>
-											<th scope="col">Front Page Advert</th>
-											<th scope="col">Logo / Background Override</th>
-											<th scope="col"></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr style="height: 40px">
-											<td>1</td>
-											<td>
-												<input type="text" placeholder="00:18:0a:12:34:56" disabled />
-											</td>
-											<td>
-												<input type="text" placeholder="Location reference or name" disabled />
-											</td>
-											<td>
-												<input type="text" placeholder="Forwarding URL" disabled />
-											</td>
-											<td style="min-width: 300px;" class="d-flex justify-content-between">
-												<input type="text" placeholder="Front Page Advert Image" disabled />
-												<i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-upload background-green text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
-											</td>
-											<td>
-												<div style="min-width: 300px;" class="d-flex justify-content-between">
-													<input type="text" placeholder="Logo Override Image" disabled />
-													<i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-upload background-green text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
-												</div>
-											</td>
-										</tr>
-										<tr style="height: 40px">
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td>
-												<input type="text" placeholder="Advert Link http://" disabled />
-											</td>
-											<td>
-												<div style="min-width: 300px;" class="d-flex justify-content-between">
-													<input type="text" placeholder="Background Override Image" disabled />
-													<i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-trash bg-danger text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-                            </div>
-							<div class="d-flex flex-row-reverse mt-4">
-								<button type="button" class="btn background-green text-light">
-									<i class="ph-check"></i>
-									Update
-								</button>
-							</div>
-
-							<div class="w-auto p-0 border rounded d-flex">
-								<i class="ph-arrow-left p-2 fs-2 fw-bold"></i>
-								<div class="px-3 fs-2 fw-bold background-green">1</div>
-								<i class="ph-arrow-right p-2 fs-2 fw-bold"></i>
-							</div>
+				<div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Edit your settings</h5>
                         </div>
 
-                        <div class="row mt-4">
-							<h5 class="fs-4 fw-bold">Add a new Location</h5>
-                            <div class="col-sm-12 overflow-auto">
-								<table class="table table-borderless">
-									<thead>
-										<tr class="text-light background-gray">
-											<th scope="col">AP Mac Address</th>
-											<th scope="col">Location / Ref</th>
-											<th scope="col">
-												<div>Forwarding URL</div>
-												<div>(Inc http://)</div>
-											</th>
-											<th scope="col">Front Page Advert</th>
-											<th scope="col">Logo / Background Override</th>
-											<th scope="col"></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr style="height: 40px">
-											<td>
-												<input type="text" placeholder="i.e 11:22:ab:56:0F:33" disabled />
-											</td>
-											<td>
-												<input type="text" placeholder="i.e Preston Store Upstairs" disabled />
-											</td>
-											<td>
-												<input type="text" placeholder="i.e https://www.yourcompany.com" disabled />
-											</td>
-											<td style="min-width: 300px;" class="d-flex justify-content-between">
-												<input type="text" placeholder="Front Page Advert Image" disabled />
-												<i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-upload background-green text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
-											</td>
-											<td>
-												<div style="min-width: 300px;" class="d-flex justify-content-between">
-													<input type="text" placeholder="Logo Override Image" disabled />
-													<i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-upload background-green text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
-												</div>
-											</td>
-										</tr>
-										<tr style="height: 40px">
-											<td></td>
-											<td></td>
-											<td></td>
-											<td>
-												<input type="text" placeholder="Advert Link http://" disabled />
-											</td>
-											<td>
-												<input type="text" placeholder="Background Override Image" disabled />
-											</td>
-										</tr>
-									</tbody>
-								</table>
+                        <div class="card-body pb-0">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="fs-6 fw-semibold my-3">
+                                        Front Page Advert Options
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          Per Access Point (Access Point Location(s))
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Every Access Point - overrides per access point.
+                                        </label>
+                                    </div>
+
+                                    <div class="my-3 w-75">
+                                        <label for="EmailAddress" class="form-label">Front Page Advert URL (inc http:// or https://)</label>
+                                        <input type="text" class="form-control" id="EmailAddress" placeholder="">
+                                    </div>
+                                    <div class="my-3 d-flex">
+                                        <div class=" w-75">
+                                            <label for="EmailAddress" class="form-label">Front Page Advert Image - (max 600w x 250h)</label>
+                                            <input type="text" class="form-control" id="EmailAddress" placeholder="">
+                                        </div>
+                                        <div class="d-flex align-items-end ms-3">
+                                            <i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-upload background-green text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom mt-3 mb-4"></div>
+                                    <div class="fs-6 fw-semibold my-3">
+                                        Full Screen Video/Image Advert System Options
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="EmailAddress" class="form-label">Enable Full Screen Adverts</label>
+                                        <select style="width: 125px" class="form-select form-select-lg" aria-label="select example">
+                                            <option value="0" selected>No</option>
+                                            <option value="1">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+        
+                                <div class="col-sm-6">
+                                    <div style="margin-top: 95px" class="d-flex">
+                                        <div class="pt-4 w-75">
+                                            <label for="EmailAddress" class="form-label">Front Page Advert Image - (max 400w x 250h)</label>
+                                            <input type="text" class="form-control" id="EmailAddress" placeholder="">
+                                        </div>
+                                        <div class="d-flex align-items-end ms-3">
+                                            <i style="width: 40px; height: 40px; border-radius: 7px;" class="ph-upload background-green text-white fw-bold fs-2 d-flex align-items-center justify-content-center"></i>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="d-flex flex-row-reverse mb-4">
+                                    <button type="button" class="btn background-green text-light">
+                                        <i class="ph-check"></i>
+                                        Update
+                                    </button>
+                                </div>
                             </div>
-							<div class="d-flex flex-row-reverse mt-4">
-								<button type="button" class="btn background-green text-light">
-									<i class="ph-plus"></i>
-									Add
-								</button>
-							</div>
                         </div>
                     </div>
                 </div>
