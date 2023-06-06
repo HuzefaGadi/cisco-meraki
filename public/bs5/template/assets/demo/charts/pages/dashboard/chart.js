@@ -171,7 +171,42 @@ var Charts = function() {
                     smooth: true
                 }
             ]
-        }
+        },
+        'last-15-days-download': {
+            title: {
+                text: 'Last 15 Days'
+            },
+            color: ['#91CC75'],
+            // Add tooltip
+            tooltip: {
+                trigger: 'axis',
+                backgroundColor: 'rgba(255,255,255,0.9)',
+                padding: [10, 15],
+                textStyle: {
+                    color: '#222',
+                    fontSize: 13,
+                    fontFamily: 'Roboto, sans-serif'
+                },
+                axisPointer: {
+                    type: 'shadow',
+                    shadowStyle: {
+                        color: 'rgba(255,255,255,0.1)'
+                    }
+                }
+            },
+            xAxis: {
+                data: ['10/5/2023', '11/5/2023', '12/5/2023', '13/5/2023', '14/5/2023', '15/5/2023', '16/5/2023', '17/5/2023', '18/5/2023', '19/5/2023', '20/5/2023', '21/5/2023', '22/5/2023', '23/5/2023', '24/5/2023', '25/5/2023']
+            },
+            yAxis: {},
+            series: [
+                {
+                    name: 'New Connections',
+                    type: 'line',
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    smooth: true
+                }
+            ]
+        },
     }
 
     var _chart = function(id) {
@@ -196,6 +231,7 @@ var Charts = function() {
             _chart('last-30-days-age-range');
             _chart('last-15-days-return-visitors');
             _chart('last-15-days-marketing');
+            _chart('last-15-days-download');
         }
     }
 }();
