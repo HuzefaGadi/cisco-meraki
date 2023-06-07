@@ -538,7 +538,7 @@
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
-					Home - <span class="fw-normal">Digital Display Feed</span>
+					Home - <span class="fw-normal">Extra Login Questions</span>
 				</h4>
 
 				<a href="#page_header" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -740,7 +740,7 @@
 							</a>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link active">
+							<a href="#" class="nav-link">
 								<i class="ph-layout"></i>
 								<span>Marketing / Social / Digital</span>
 							</a>
@@ -749,7 +749,7 @@
 								<li class="nav-item"><a href="advert-system.html" class="nav-link">Advert System</a></li>
 								<li class="nav-item"><a href="marketing.html" class="nav-link">Marketing Signups/Removals</a></li>
 								<li class="nav-item"><a href="social-media.html" class="nav-link">Social Media</a></li>
-								<li class="nav-item"><a href="digital-display.html" class="nav-link active">Digital Displays Feed</a></li>
+								<li class="nav-item"><a href="digital-display.html" class="nav-link">Digital Displays Feed</a></li>
 								<li class="nav-item"><a href="valid-names.html" class="nav-link">Valid names list</a></li>
 							</ul>
 						</li>
@@ -786,7 +786,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="extra-login.html" class="nav-link">
+							<a href="extra-login.html" class="nav-link active">
 								<i class="ph-house"></i>
 								<span>
 									Extra Login Questions
@@ -1091,37 +1091,90 @@
 			<!-- Content area -->
 			<div class="content">
 				<div class="row">
-                    <div class="card">
-					    <div class="col-sm-6">
+					<div class="card">
+                        <div class="card-header border-bottom-0">
+                            <h5 class="fs-4 fw-bold mb-0">Edit your settings</h5>
+                        </div>
 
-							<div class="card-header d-flex align-items-center">
-                                <h5 class="mb-0">Edit your settings</h5>
-							</div>
-
-							<div class="card-body pb-0">
-                                <div class="fs-6 fw-semibold my-3">
-                                    Digital Display Feed Settings
-                                </div>
-                                <p>
-                                    If you enable the Digital Display (DD) Feed option you will need to select which <a>Access Point(s)</a> will create a feed to be consumed. All feeds follow the same format i.e.
-                                    <div>
-                                        https://wifi.splash-access.com/accounts/EsteeLauderWiFi/rss/rss_(AP Mac address without :'s).xml
+						<div class="card-body pb-0">
+							<div class="row">
+								<div class="col-md-6">
+                                    <p>
+                                        Leaving the Questions blank or their defaults of Q1, Q2 etc will prevent extra question(s) from being displayed.
+                                    </p>
+                                    <div class="d-flex mt-3">
+                                        <div style="width: calc(100% - 330px)">
+                                            <label for="question1" class="form-label">Question 1</label>
+                                            <input type="text" class="form-control" id="question1" placeholder="">
+                                        </div>
+                                        <div style="width: 300px; margin-left: 15px;" class="d-flex">
+                                            <div>
+                                                <label for="type" class="form-label me-3">Type</label>
+                                                <select id="type" class="form-select form-select-lg" aria-label="select example">
+                                                    <option value="Standard" selected>Text - Standard</option>
+                                                    <option value="Custom">Text - Custom</option>
+                                                </select>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between" style="margin: 0 0 15px 15px">
+                                                <label class="form-check-label fw-semibold" for="required">
+                                                    Required
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="required">
+                                            </div>
+                                        </div>
                                     </div>
-                                </p>
+                                    <div class="d-flex mt-3">
+                                        <div style="width: calc(100% - 330px)">
+                                            <label for="question2" class="form-label">Question 2</label>
+                                            <input type="text" class="form-control" id="question2" placeholder="">
+                                        </div>
+                                        <div style="width: 300px; margin-left: 15px;" class="d-flex">
+                                            <div>
+                                                <label for="type" class="form-label me-3">Type</label>
+                                                <select id="type" class="form-select form-select-lg" aria-label="select example">
+                                                    <option value="Standard" selected>Text - Standard</option>
+                                                    <option value="Custom">Text - Custom</option>
+                                                </select>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between" style="margin: 0 0 15px 15px">
+                                                <label class="form-check-label fw-semibold" for="required">
+                                                    Required
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="required">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-3">
+                                        <div style="width: calc(100% - 330px)">
+                                            <label for="question3" class="form-label">Question 3</label>
+                                            <input type="text" class="form-control" id="question3" placeholder="Q3">
+                                        </div>
+                                        <div style="width: 300px; margin-left: 15px;" class="d-flex">
+                                            <div>
+                                                <label for="type" class="form-label me-3">Type</label>
+                                                <select id="type" class="form-select form-select-lg" aria-label="select example">
+                                                    <option value="Standard" selected>Text - Standard</option>
+                                                    <option value="Custom">Text - Custom</option>
+                                                </select>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between" style="margin: 0 0 15px 15px">
+                                                <label class="form-check-label fw-semibold" for="required">
+                                                    Required
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="required">
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                <div class="my-4">
-                                    <label for="EmailAddress" class="form-label">DD Feed Enabled?</label>
-                                    <select style="width: 125px" class="form-select form-select-lg" aria-label="select example">
-                                        <option value="1">Yes</option>
-                                        <option value="0" selected>No</option>
-                                    </select>
-                                </div>
-                                <div class="d-flex flex-row-reverse mb-4">
-                                    <button type="button" class="btn background-green text-light">
-                                        <i class="ph-check"></i>
-                                        Update
-                                    </button>
-                                </div>
+                                    <div style="margin-left: calc(100% - 375px)" class="my-3">
+                                        <button type="button" class="btn border">
+                                            Submit
+                                        </button>
+                                    </div>
+								</div>
+
+								<div class="col-md-6">
+								</div>
 							</div>
 						</div>
 					</div>

@@ -538,7 +538,7 @@
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
-					Home - <span class="fw-normal">Digital Display Feed</span>
+					Home - <span class="fw-normal">Admin Log</span>
 				</h4>
 
 				<a href="#page_header" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -740,7 +740,7 @@
 							</a>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link active">
+							<a href="#" class="nav-link">
 								<i class="ph-layout"></i>
 								<span>Marketing / Social / Digital</span>
 							</a>
@@ -749,7 +749,7 @@
 								<li class="nav-item"><a href="advert-system.html" class="nav-link">Advert System</a></li>
 								<li class="nav-item"><a href="marketing.html" class="nav-link">Marketing Signups/Removals</a></li>
 								<li class="nav-item"><a href="social-media.html" class="nav-link">Social Media</a></li>
-								<li class="nav-item"><a href="digital-display.html" class="nav-link active">Digital Displays Feed</a></li>
+								<li class="nav-item"><a href="digital-display.html" class="nav-link">Digital Displays Feed</a></li>
 								<li class="nav-item"><a href="valid-names.html" class="nav-link">Valid names list</a></li>
 							</ul>
 						</li>
@@ -802,14 +802,14 @@
 							</a>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
+							<a href="#" class="nav-link active">
 								<i class="ph-layout"></i>
 								<span>Admin / IP Restrictions</span>
 							</a>
 							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
 								<li class="nav-item"><a href="admin-users.html" class="nav-link">Admin Users</a></li>
 								<li class="nav-item"><a href="add-admin-user.html" class="nav-link">Add Admin User</a></li>
-								<li class="nav-item"><a href="admin-log.html" class="nav-link">Admin Log</a></li>
+								<li class="nav-item"><a href="admin-log.html" class="nav-link active">Admin Log</a></li>
 								<li class="nav-item"><a href="../../layout_4/full/index.html" class="nav-link">System / Verification Settings</a></li>
 							</ul>
 						</li>
@@ -869,7 +869,7 @@
 							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
 								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Default layout</a></li>
 								<li class="nav-item"><a href="../../layout_2/full/index.html" class="nav-link">Layout 2</a></li>
-								<li class="nav-item"><a href="index.html" class="nav-link active">Layout 3</a></li>
+								<li class="nav-item"><a href="index.html" class="nav-link">Layout 3</a></li>
 								<li class="nav-item"><a href="../../layout_4/full/index.html" class="nav-link">Layout 4</a></li>
 								<li class="nav-item"><a href="../../layout_5/full/index.html" class="nav-link">Layout 5</a></li>
 								<li class="nav-item"><a href="../../layout_6/full/index.html" class="nav-link">Layout 6</a></li>
@@ -882,7 +882,7 @@
 								<span>Themes</span>
 							</a>
 							<ul class="nav-group-sub collapse" data-submenu-title="Themes">
-								<li class="nav-item"><a href="index.html" class="nav-link active">Default</a></li>
+								<li class="nav-item"><a href="index.html" class="nav-link">Default</a></li>
 								<li class="nav-item"><a href="../../../LTR/material/full/index.html" class="nav-link disabled">Material <span class="opacity-75 fs-sm ms-auto">Coming soon</span></a></li>
 								<li class="nav-item"><a href="../../../LTR/clean/full/index.html" class="nav-link disabled">Clean <span class="opacity-75 fs-sm ms-auto">Coming soon</span></a></li>
 							</ul>
@@ -1092,39 +1092,298 @@
 			<div class="content">
 				<div class="row">
                     <div class="card">
-					    <div class="col-sm-6">
-
-							<div class="card-header d-flex align-items-center">
-                                <h5 class="mb-0">Edit your settings</h5>
-							</div>
-
-							<div class="card-body pb-0">
-                                <div class="fs-6 fw-semibold my-3">
-                                    Digital Display Feed Settings
-                                </div>
-                                <p>
-                                    If you enable the Digital Display (DD) Feed option you will need to select which <a>Access Point(s)</a> will create a feed to be consumed. All feeds follow the same format i.e.
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <h5 class="fs-4 fw-bold">Admin History - Displaying last 50</h5>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
                                     <div>
-                                        https://wifi.splash-access.com/accounts/EsteeLauderWiFi/rss/rss_(AP Mac address without :'s).xml
+                                        <label for="dateFrom" class="form-label">Date From</label>
+                                        <input type="date" class="form-control" id="dateFrom" />
                                     </div>
-                                </p>
+                                    <div class="ms-3">
+                                        <label for="dateTo" class="form-label">Date To</label>
+                                        <input type="date" class="form-control" id="dateTo" />
+                                    </div>
+                                    <div class="ms-3 d-flex flex-column justify-content-end">
+                                        <button type="button" class="btn bg-body border fw-semibold">Search</button>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <div class="my-4">
-                                    <label for="EmailAddress" class="form-label">DD Feed Enabled?</label>
-                                    <select style="width: 125px" class="form-select form-select-lg" aria-label="select example">
-                                        <option value="1">Yes</option>
-                                        <option value="0" selected>No</option>
-                                    </select>
-                                </div>
-                                <div class="d-flex flex-row-reverse mb-4">
-                                    <button type="button" class="btn background-green text-light">
-                                        <i class="ph-check"></i>
-                                        Update
-                                    </button>
-                                </div>
-							</div>
-						</div>
-					</div>
+                            <table class="table table-striped mt-4">
+                                <thead>
+                                    <tr class="text-light background-gray">
+                                        <th scope="col">id</th>
+                                        <th scope="col">Page</th>
+                                        <th scope="col">Action</th>
+                                        <th scope="col">User</th>
+                                        <th scope="col">IP Address</th>
+                                        <th scope="col">Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>51</td>
+                                        <td>Admin Log</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:07:11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>Add Admin User</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:06:59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>49</td>
+                                        <td>Add Admin User</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:06:59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>48</td>
+                                        <td>Admin Users</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:06:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>47</td>
+                                        <td>Admin Users</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:06:47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>46</td>
+                                        <td>Extra Questions</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:06:21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>45</td>
+                                        <td>Extra Questions</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:06:21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>45</td>
+                                        <td>Text</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:06:12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44</td>
+                                        <td>Text</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:06:12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>43</td>
+                                        <td>Colours/Logo & Background</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:06:02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>Colours/Logo & Background</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:06:02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>41</td>
+                                        <td>Downloads Emails</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:05:53</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>Downloads Emails</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:05:53</td>
+                                    </tr>
+                                    <tr>
+                                        <td>39</td>
+                                        <td>SMS Settings</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:05:42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>SMS Settings</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:05:42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>37</td>
+                                        <td>Digital Display Feed</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:05:22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>Digital Display Feed</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:05:22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>35</td>
+                                        <td>Social Media</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:05:06</td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>Social Media</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:05:06</td>
+                                    </tr>
+                                    <tr>
+                                        <td>33</td>
+                                        <td>Marketing Sign-ups</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:05:06</td>
+                                    </tr>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>Marketing Sign-ups</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:05:06</td>
+                                    </tr>
+                                    <tr>
+                                        <td>31</td>
+                                        <td>Advert Settings</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:04:54</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>Advert Settings</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:04:54</td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>Email Marketing</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:04:45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td>Email Marketing</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:04:45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>Advert Settings</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:04:37</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>Advert Settings</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:04:37</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Advert Settings</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:04:37</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>Automatic Login</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:04:16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>Automatic Login</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:04:16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>Secure Guest Wi-Fi</td>
+                                        <td></td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:03:57</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>Secure Guest Wi-Fi</td>
+                                        <td>Updated Record(s)</td>
+                                        <td>time@splashaccess.co.uk</td>
+                                        <td>86.15.57.155</td>
+                                        <td>25/05/2023 07:03:57</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 				</div>
 			</div>
 			<!-- /content area -->
