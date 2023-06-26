@@ -477,14 +477,15 @@
 	</div>
 	<!-- /main navbar -->
 
+
 	<!-- Breadcrumbs -->
 	<div style="margin-top: 100px;" class="page-header page-header-light shadow">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<div class="breadcrumb py-2">
 					<a href="index.html" class="breadcrumb-item"><i class="ph-house"></i></a>
-					<a href="home.html" class="breadcrumb-item">Home</a>
-					<span class="breadcrumb-item active">Add Admin User</span>
+					<a href="#" class="breadcrumb-item">Home</a>
+					<span class="breadcrumb-item active">Sign-Out</span>
 				</div>
 
 				<a href="#breadcrumb_elements" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -537,7 +538,7 @@
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
-					Home - <span class="fw-normal">Add Admin User</span>
+					Home - <span class="fw-normal">Sign-Out</span>
 				</h4>
 
 				<a href="#page_header" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -696,7 +697,7 @@
 								<span>System / API Settings</span>
 							</a>
 							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="data-limits.html" class="nav-link">Data Limits</a></li>
+								<li class="nav-item"><a href="data-limits.html" class="nav-link active">Data Limits</a></li>
 								<li class="nav-item"><a href="meraki-settings.html" class="nav-link">Meraki API Settings</a></li>
 								<li class="nav-item"><a href="camera-settings.html" class="nav-link">Camera Settings</a></li>
 								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
@@ -801,13 +802,13 @@
 							</a>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link active">
+							<a href="#" class="nav-link">
 								<i class="ph-layout"></i>
 								<span>Admin / IP Restrictions</span>
 							</a>
 							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
 								<li class="nav-item"><a href="admin-users.html" class="nav-link">Admin Users</a></li>
-								<li class="nav-item"><a href="add-admin-user.html" class="nav-link active">Add Admin User</a></li>
+								<li class="nav-item"><a href="add-admin-user.html" class="nav-link">Add Admin User</a></li>
 								<li class="nav-item"><a href="admin-log.html" class="nav-link">Admin Log</a></li>
 								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
 							</ul>
@@ -853,7 +854,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="sign-out.html" class="nav-link">
+							<a href="sign-out.html" class="nav-link active">
 								<i class="ph-house"></i>
 								<span>
 									Sign-Out
@@ -1092,132 +1093,11 @@
 				<div class="row">
                     <div class="card">
                         <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <h5 class="fs-4 fw-bold">Add a new Admin User</h5>
+                            <div class="fw-bold">
+                                No Data Found
                             </div>
-                            <div class="col-md-6">
-                                <p>
-                                    Username must be at least 8 characters, password must contain at least 1 Uppercase Letter, 1 Lowercase Letter, 1 Number, 1 Special Character i.e #@!%^ and be more than 8 characters long.
-                                </p>
-    
-								<table class="table table-borderless">
-									<thead>
-										<tr class="text-light background-gray">
-											<th scope="col">Username</th>
-											<th scope="col">Password</th>
-											<th scope="col">User Level</th>
-										</tr>
-									</thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <input type="text" class="form-control" placeholder="" />
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control" placeholder="" />
-                                            </td>
-                                            <td>
-                                                <select style="font-size: 11px;" class="form-select" aria-label="select example">
-                                                    <option value="all">Admin - Access to All Areas</option>
-                                                    <option value="sub" selected>Sub Admin - Access to Defined Areas (below)</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-    
-								<table class="table table-borderless">
-									<thead>
-										<tr class="text-light background-gray">
-											<th scope="col">Define Access - Sub Admins only</th>
-											<th scope="col">
-                                                <input type="checkbox" />
-                                                Select All
-                                            </th>
-										</tr>
-									</thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>General Settings</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Access Point Location(s)</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Security / Verification Levels</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Login System Type</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Automatic Login</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Digital Display Feed & Valid Names List</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Email Marketing</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Advert System</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Social Media</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Marketing Signups/Removals</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Download Emails</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Colours, Logo & Background</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>SMS Settings & Text / SMS Pre-Authorized Numbers</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Text & Terms</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Extra Login Questions</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Admin Users & IP Restrictions</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Admin Log</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Licence Status</td>
-                                            <td><input type="checkbox" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button type="button" class="btn bg-body border fw-semibold">Add User</button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
                         </div>
-					</div>
+                    </div>
 				</div>
 			</div>
 			<!-- /content area -->
