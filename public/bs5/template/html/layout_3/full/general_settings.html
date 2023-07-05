@@ -238,7 +238,7 @@
 			<div class="navbar-collapse justify-content-center flex-lg-1 order-2 order-lg-1 collapse" id="navbar_search">
 				<div class="navbar-search flex-fill position-relative mt-2 mt-lg-0 mx-lg-3">
 					<div class="form-control-feedback form-control-feedback-start flex-grow-1" data-color-theme="dark">
-						<input type="text" class="form-control bg-transparent rounded-pill" placeholder="Search" data-bs-toggle="dropdown">
+						<input type="text" style="background: #0f930f" class="form-control text-white rounded-pill" placeholder="Search" data-bs-toggle="dropdown">
 						<div class="form-control-feedback-icon">
 							<i class="ph-magnifying-glass"></i>
 						</div>
@@ -482,7 +482,7 @@
 
 
 	<!-- Breadcrumbs -->
-	<div style="margin-top: 100px;" class="page-header page-header-light shadow">
+	<div style="margin-top: 65px;" class="page-header page-header-light shadow">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<div class="breadcrumb py-2">
@@ -537,7 +537,7 @@
 
 
 	<!-- Page header -->
-	<div class="page-header pt-2">
+	<div class="page-header">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
@@ -816,18 +816,6 @@
 								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
 							</ul>
 						</li>
-						<!-- <li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
-								<i class="ph-layout"></i>
-								<span>Wireless Health</span>
-							</a>
-							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Data Limits</a></li>
-								<li class="nav-item"><a href="../../layout_2/full/index.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="index.html" class="nav-link">Camera Settings</a></li>
-								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
-							</ul>
-						</li> -->
 						<li class="nav-item">
 							<a href="webex-team.html" class="nav-link">
 								<i class="ph-users"></i>
@@ -836,18 +824,6 @@
 								</span>
 							</a>
 						</li>
-						<!-- <li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
-								<i class="ph-layout"></i>
-								<span>Webhook</span>
-							</a>
-							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Data Limits</a></li>
-								<li class="nav-item"><a href="../../layout_2/full/index.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="index.html" class="nav-link">Camera Settings</a></li>
-								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
-							</ul>
-						</li> -->
 						<li class="nav-item">
 							<a href="licence-status.html" class="nav-link">
 								<i class="ph-identification-badge"></i>
@@ -888,122 +864,137 @@
                         <div class="row">
                             <!-- Left side -->
                             <div class="col-sm-6">
-                                <div class="fs-5 fw-semibold">Your Details</div>
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-5 fw-semibold">Your Details</div>
 
-                                <div class="my-3">
-                                    <label for="name" class="form-label">Network Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Network Name">
-                                </div>
-                                <div class="my-3">
-                                    <label for="administratorName" class="form-label">Administrator Name</label>
-                                    <input type="text" class="form-control" id="administratorName" placeholder="Administrator Name">
-                                </div>
-                                <div class="my-3">
-                                    <label for="Address" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="Address" placeholder="Address">
-                                </div>
-                                <div class="my-3">
-                                    <label for="Country" class="form-label">Country</label>
-                                    <input type="text" class="form-control" id="Country" placeholder="Country">
-                                </div>
-                                <div class="my-3">
-                                    <label for="Telephone" class="form-label">Telephone</label>
-                                    <input type="text" class="form-control" id="Telephone" placeholder="Telephone">
-                                </div>
-                                <div class="my-3">
-                                    <label for="EmailAddress" class="form-label">Email Address</label>
-                                    <input type="text" class="form-control" id="EmailAddress" placeholder="Email Address">
-                                </div>
+										<div class="my-3">
+											<label for="name" class="form-label">Network Name</label>
+											<input type="text" class="form-control" id="name" placeholder="Network Name">
+										</div>
+										<div class="my-3">
+											<label for="administratorName" class="form-label">Administrator Name</label>
+											<input type="text" class="form-control" id="administratorName" placeholder="Administrator Name">
+										</div>
+										<div class="my-3">
+											<label for="Address" class="form-label">Address</label>
+											<input type="text" class="form-control" id="Address" placeholder="Address">
+										</div>
+										<div class="my-3">
+											<label for="Country" class="form-label">Country</label>
+											<input type="text" class="form-control" id="Country" placeholder="Country">
+										</div>
+										<div class="my-3">
+											<label for="Telephone" class="form-label">Telephone</label>
+											<input type="text" class="form-control" id="Telephone" placeholder="Telephone">
+										</div>
+										<div class="my-3">
+											<label for="EmailAddress" class="form-label">Email Address</label>
+											<input type="text" class="form-control" id="EmailAddress" placeholder="Email Address">
+										</div>
+									</div>
+								</div>
 
-                                <div class="border-bottom mt-3 mb-4"></div>
-                                <div class="fs-5 fw-semibold">Mailing List / Marketing Provider</div>
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-5 fw-semibold">Mailing List / Marketing Provider</div>
 
-                                <div class="my-3">
-                                    <label for="EmailAddress" class="form-label">API - Mailing Provider</label>
-                                    <select class="form-select" aria-label="select example">
-                                        <option selected>Not Used</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-
-                                <div class="border-bottom mt-3 mb-4"></div>
-
-                                <div class="fs-5 fw-semibold">Duration Setting(s)</div>
-                                <div class="mt-3 mb-4">
-                                    Alter the duration via the slider(s) or by entering an amount into the boxes provided.
-                                </div>
-
-                                <div class="fs-6 fw-semibold">Login Duration(seconds)</div>
-                                <div class="mb-4">
-                                    Length of period in seconds you wish to allow the guest/user access onto the wifi.
-
-                                    <div class="row mt-3">
-                                        <div class="col-sm-6 p-0">
-                                            <label for="name" class="form-label fw-semibold fs-sm">HOURS</label>
-                                            <input type="text" class="form-control ion-pips-height-helper" id="hours-slider" data-fouc>
-                                        </div>
-                                        <div class="col-sm-6 p-0">
-                                            <label for="name" class="form-label fw-semibold fs-sm">DAYS</label>
-                                            <input type="text" class="form-control ion-pips-height-helper" id="days-slider" data-fouc>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-sm-6 p-0">
-                                            <input type="text" class="form-control" placeholder="3600" disabled/>
-                                        </div>
-                                        <div class="col-sm-6 p-0">
-                                            <input type="text" class="form-control" placeholder="1 Hour" disabled/>
-                                        </div>
-                                    </div>
-
-                                    
+										<div class="my-3">
+											<label for="EmailAddress" class="form-label">API - Mailing Provider</label>
+											<select class="form-select" aria-label="select example">
+												<option selected>Not Used</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+									</div>
                                 </div>
 
-                                <div class="border-bottom mt-3 mb-4"></div>
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-5 fw-semibold">Duration Setting(s)</div>
+										<div class="mt-3 mb-4">
+											Alter the duration via the slider(s) or by entering an amount into the boxes provided.
+										</div>
 
-                                <div class="fs-6 fw-semibold">Prevent Guest Device Re-Access</div>
-                                <div class="mb-4">
-                                    If enabled, restricts the device so it can not login again until the time period below has passed.
+										<div class="fs-6 fw-semibold">Login Duration(seconds)</div>
+										<div class="mb-4">
+											Length of period in seconds you wish to allow the guest/user access onto the wifi.
 
-                                    <div class="my-3">
-                                        <label for="EmailAddress" class="form-label">Prevent Enabled</label>
-                                        <select class="form-select" aria-label="select example">
-                                            <option value="0" selected>No</option>
-                                            <option value="1">Yes</option>
-                                        </select>
-                                    </div>
-                                </div>
+											<div class="row mt-3">
+												<div class="col-sm-6 p-0">
+													<label for="name" class="form-label fw-semibold fs-sm">HOURS</label>
+													<input type="text" class="form-control ion-pips-height-helper" id="hours-slider" data-fouc>
+												</div>
+												<div class="col-sm-6 p-0">
+													<label for="name" class="form-label fw-semibold fs-sm">DAYS</label>
+													<input type="text" class="form-control ion-pips-height-helper" id="days-slider" data-fouc>
+												</div>
+											</div>
+											<div class="row mt-3">
+												<div class="col-sm-6 p-0">
+													<input type="text" class="form-control" placeholder="3600" disabled/>
+												</div>
+												<div class="col-sm-6 p-0">
+													<input type="text" class="form-control" placeholder="1 Hour" disabled/>
+												</div>
+											</div>
 
-                                <div class="border-bottom my-4"></div>
+											
+										</div>
+									</div>
+								</div>
 
-                                <div class="fs-6 fw-semibold">VIP By Pass Mac Address</div>
-                                <div class="mb-4">
-                                    Gives specific MAC Address automatic access without having to enter any details into the system.
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-6 fw-semibold">Prevent Guest Device Re-Access</div>
+										<div class="mb-4">
+											If enabled, restricts the device so it can not login again until the time period below has passed.
 
-                                    <div class="my-3">
-                                        <label for="EmailAddress" class="form-label">VIP Enabled</label>
-                                        <select class="form-select" aria-label="select example">
-                                            <option value="0" selected>No</option>
-                                            <option value="1">Yes</option>
-                                        </select>
-                                    </div>
-                                </div>
+											<div class="my-3">
+												<label for="EmailAddress" class="form-label">Prevent Enabled</label>
+												<select class="form-select" aria-label="select example">
+													<option value="0" selected>No</option>
+													<option value="1">Yes</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                                <div class="border-bottom my-4"></div>
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-6 fw-semibold">VIP By Pass Mac Address</div>
+										<div class="mb-4">
+											Gives specific MAC Address automatic access without having to enter any details into the system.
 
-                                <div class="fs-6 fw-semibold mb-4">Splash Access - Advanced Analytics</div>
-                                <div class="mb-4">
-                                    Splash Access -Analytics (Enable) - Requires you to have an advanced account more details.
+											<div class="my-3">
+												<label for="EmailAddress" class="form-label">VIP Enabled</label>
+												<select class="form-select" aria-label="select example">
+													<option value="0" selected>No</option>
+													<option value="1">Yes</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                                    <div class="my-3">
-                                        <select class="form-select" aria-label="select example">
-                                            <option value="0" selected>No</option>
-                                            <option value="1">Yes</option>
-                                        </select>
-                                    </div>
-                                </div>
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-6 fw-semibold mb-4">Splash Access - Advanced Analytics</div>
+										<div class="mb-4">
+											Splash Access -Analytics (Enable) - Requires you to have an advanced account more details.
+
+											<div class="my-3">
+												<select class="form-select" aria-label="select example">
+													<option value="0" selected>No</option>
+													<option value="1">Yes</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
                             </div>
                             <!-- /Left side -->
 

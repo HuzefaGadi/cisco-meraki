@@ -235,7 +235,7 @@
 			<div class="navbar-collapse justify-content-center flex-lg-1 order-2 order-lg-1 collapse" id="navbar_search">
 				<div class="navbar-search flex-fill position-relative mt-2 mt-lg-0 mx-lg-3">
 					<div class="form-control-feedback form-control-feedback-start flex-grow-1" data-color-theme="dark">
-						<input type="text" class="form-control bg-transparent rounded-pill" placeholder="Search" data-bs-toggle="dropdown">
+						<input type="text" style="background: #0f930f" class="form-control text-white rounded-pill" placeholder="Search" data-bs-toggle="dropdown">
 						<div class="form-control-feedback-icon">
 							<i class="ph-magnifying-glass"></i>
 						</div>
@@ -479,7 +479,7 @@
 
 
 	<!-- Breadcrumbs -->
-	<div style="margin-top: 100px;" class="page-header page-header-light shadow">
+	<div style="margin-top: 65px;" class="page-header page-header-light shadow">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<div class="breadcrumb py-2">
@@ -534,7 +534,7 @@
 
 
 	<!-- Page header -->
-	<div class="page-header pt-2">
+	<div class="page-header">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
@@ -811,18 +811,6 @@
 								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
 							</ul>
 						</li>
-						<!-- <li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
-								<i class="ph-layout"></i>
-								<span>Wireless Health</span>
-							</a>
-							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Data Limits</a></li>
-								<li class="nav-item"><a href="../../layout_2/full/index.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="index.html" class="nav-link">Camera Settings</a></li>
-								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
-							</ul>
-						</li> -->
 						<li class="nav-item">
 							<a href="webex-team.html" class="nav-link">
 								<i class="ph-users"></i>
@@ -831,18 +819,6 @@
 								</span>
 							</a>
 						</li>
-						<!-- <li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
-								<i class="ph-layout"></i>
-								<span>Webhook</span>
-							</a>
-							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Data Limits</a></li>
-								<li class="nav-item"><a href="../../layout_2/full/index.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="index.html" class="nav-link">Camera Settings</a></li>
-								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
-							</ul>
-						</li> -->
 						<li class="nav-item">
 							<a href="licence-status.html" class="nav-link">
 								<i class="ph-identification-badge"></i>
@@ -887,248 +863,253 @@
 
                             <!-- Left side -->
                             <div class="col-sm-6 mt-2">
-                                <div>
-                                    <span class="fs-5 fw-bold">Display page:</span>
-                                    <a href="https://wifi.splash-access.com/accounts/EsteeLauderWiFi/qr">
-                                        https://wifi.splash-access.com/accounts/EsteeLauderWiFi/qr
-                                    </a>
-                                </div>
+								<div class="card">
+									<div class="card-body">
+										<div>
+											<span class="fs-5 fw-bold">Display page:</span>
+											<a href="https://wifi.splash-access.com/accounts/EsteeLauderWiFi/qr">
+												https://wifi.splash-access.com/accounts/EsteeLauderWiFi/qr
+											</a>
+										</div>
+		
+										<div class="fs-5 fw-bold mt-3">
+											QR Code Text/Info
+										</div>
+		
+										<div class="mt-3">
+											<label for="Zone1" class="form-label fw-semibold">QR Info Title</label>
+											<input type="text" class="form-control" placeholder="Please scan the QR code"/>
+										</div>
+		
+										<div class="mt-3">
+											<label for="Zone1" class="form-label fw-semibold">QR Today's Code</label>
+											<input type="text" class="form-control" placeholder="Today's code is:-"/>
+										</div>
+		
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-6 ps-0">
+													<div class="mt-3">
+														<label for="Zone1" class="form-label fw-semibold">QR Title Text Color</label>
+														<div class="input-group mb-3">
+															<span class="input-group-text bg-black" id="basic-addon1">@</span>
+															<input type="text" class="form-control" placeholder="#000000" aria-describedby="basic-addon1"/>
+														</div>
+													</div>
+		
+													<div class="mt-3">
+														<label for="Threshold1" class="form-label fw-semibold">QR Title Font Size (px)</label>
+														<select class="form-select" aria-label="select example">
+															<option value="0" selected>38</option>
+															<option value="39">39</option>
+															<option value="40">40</option>
+															<option value="41">41</option>
+															<option value="42">42</option>
+															<option value="43">43</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="col-sm-6">
+													<div class="mt-3">
+														<label for="Zone1" class="form-label fw-semibold">QR Today's Text Color</label>
+														<div class="input-group mb-3">
+															<span class="input-group-text bg-black" id="basic-addon2">@</span>
+															<input type="text" class="form-control" placeholder="#000000" aria-describedby="basic-addon2"/>
+														</div>
+													</div>
+													<div class="mt-3">
+														<label for="Threshold1" class="form-label fw-semibold">QR Today's Font Size (px)</label>
+														<select class="form-select" aria-label="select example">
+															<option value="28" selected>28</option>
+															<option value="29">29</option>
+															<option value="30">30</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+		
+										<div class="fs-5 fw-bold mt-3">
+											QR Scrolling Text Settings
+										</div>
+										<div class="mt-3">
+											<label for="Threshold1" class="form-label fw-semibold">QR Scrolling Text Speed</label>
+											<select class="form-select" aria-label="select example">
+												<option value="2" selected>2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+										</div>
+		
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-6 ps-0">
+													<div class="mt-3">
+														<label for="Zone1" class="form-label fw-semibold">QR Title Text Color</label>
+														<div class="input-group mb-3">
+															<span class="input-group-text" style="background-color: #74b820;" id="basic-addon1">&nbsp;&nbsp;</span>
+															<input type="text" class="form-control" placeholder="#74b820" aria-describedby="basic-addon1"/>
+														</div>
+													</div>
+													<div class="mt-3">
+														<label for="Threshold1" class="form-label fw-semibold">QR Feed Padding</label>
+														<select class="form-select" aria-label="select example">
+															<option value="30" selected>30</option>
+															<option value="40">40</option>
+														</select>
+													</div>
+												</div>
+		
+												<div class="col-sm-6">
+													<div class="mt-3">
+														<label for="Zone1" class="form-label fw-semibold">QR Today's Text Color</label>
+														<div class="input-group mb-3">
+															<span class="input-group-text bg-light" id="basic-addon2">@</span>
+															<input type="text" class="form-control" placeholder="#ffffff" aria-describedby="basic-addon2"/>
+														</div>
+													</div>
+													<div class="mt-3">
+														<label for="Threshold1" class="form-label fw-semibold">QR Feed Font Size</label>
+														<select class="form-select" aria-label="select example">
+															<option value="50" selected>50</option>
+															<option value="40">40</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+		
+										<div class="mt-3">
+											<label for="Zone1" class="form-label fw-semibold">QR Scrolling Feed Text</label>
+											<input type="text" class="form-control" placeholder="Please scan the QR code, or use our code to connect to the secure Wi-Fi network."/>
+										</div>
+									</div>
+								</div>
 
-                                <div class="fs-5 fw-bold mt-3">
-                                    QR Code Text/Info
-                                </div>
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-5 fw-bold mt-3">
+											QR Code Settings
+										</div>
+										<div class="mt-3">
+											<label for="Threshold2" class="form-label fw-semibold">Email Wi-Fi Access Code? - Send the code with the welcome email</label>
+											<select class="form-select" aria-label="select example">
+												<option value="0" selected>No</option>
+												<option value="1">Yes</option>
+											</select>
+										</div>
+										<div class="mt-3">
+											<label for="Threshold3" class="form-label fw-semibold">Security Code Type</label>
+											<select class="form-select" aria-label="select example">
+												<option value="0" selected>WEP</option>
+												<option value="1">WAP</option>
+											</select>
+										</div>
+										<div class="mt-3">
+											<label for="text" class="form-label fw-semibold">SSID (Readonly) - Set in General Settings (Meraki API)</label>
+											<input type="text" class="form-control" placeholder="SSID, set in General Settings" />
+										</div>
 
-                                <div class="mt-3">
-                                    <label for="Zone1" class="form-label fw-semibold">QR Info Title</label>
-                                    <input type="text" class="form-control" placeholder="Please scan the QR code"/>
-                                </div>
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-6 ps-0">
+													<div class="mt-3">
+														<label for="Zone1" class="form-label fw-semibold">QR Foreground Color</label>
+														<div class="input-group mb-3">
+															<span class="input-group-text" style="background-color: #000000;" id="basic-addon1">&nbsp;&nbsp;</span>
+															<input type="text" class="form-control" placeholder="#000000" aria-describedby="basic-addon1"/>
+														</div>
+													</div>
+												</div>
 
-                                <div class="mt-3">
-                                    <label for="Zone1" class="form-label fw-semibold">QR Today's Code</label>
-                                    <input type="text" class="form-control" placeholder="Today's code is:-"/>
-                                </div>
+												<div class="col-sm-6">
+													<div class="mt-3">
+														<label for="Zone1" class="form-label fw-semibold">QR Background Color</label>
+														<div class="input-group mb-3">
+															<span class="input-group-text" style="background-color: #ffffff;" id="basic-addon2">&nbsp;&nbsp;</span>
+															<input type="text" class="form-control" placeholder="#ffffff" aria-describedby="basic-addon2"/>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mt-3">
+											<label for="Threshold3" class="form-label fw-semibold">Image Size</label>
+											<select class="form-select" aria-label="select example">
+												<option value="330" selected>330</option>
+												<option value="450">450</option>
+											</select>
+										</div>
+										<div class="mt-3">
+											<label for="Threshold3" class="form-label fw-semibold">Error Correction</label>
+											<select class="form-select" aria-label="select example">
+												<option value="7" selected>L - [Default] Allows recovery of up to 7% data loss</option>
+												<option value="5">5%</option>
+											</select>
+										</div>
+									</div>
+								</div>
 
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-6 ps-0">
-                                            <div class="mt-3">
-                                                <label for="Zone1" class="form-label fw-semibold">QR Title Text Color</label>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text bg-black" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="#000000" aria-describedby="basic-addon1"/>
-                                                </div>
-                                            </div>
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-5 mt-3">
+											<span class="fw-bold">
+												Password Options
+											</span>
+											&nbsp;(Generated Randomly)
+										</div>
 
-                                            <div class="mt-3">
-                                                <label for="Threshold1" class="form-label fw-semibold">QR Title Font Size (px)</label>
-                                                <select class="form-select" aria-label="select example">
-                                                    <option value="0" selected>38</option>
-                                                    <option value="39">39</option>
-                                                    <option value="40">40</option>
-                                                    <option value="41">41</option>
-                                                    <option value="42">42</option>
-                                                    <option value="43">43</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-sm-6">
-                                            <div class="mt-3">
-                                                <label for="Zone1" class="form-label fw-semibold">QR Today's Text Color</label>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text bg-black" id="basic-addon2">@</span>
-                                                    <input type="text" class="form-control" placeholder="#000000" aria-describedby="basic-addon2"/>
-                                                </div>
-                                            </div>
-                                            <div class="mt-3">
-                                                <label for="Threshold1" class="form-label fw-semibold">QR Today's Font Size (px)</label>
-                                                <select class="form-select" aria-label="select example">
-                                                    <option value="28" selected>28</option>
-                                                    <option value="29">29</option>
-                                                    <option value="30">30</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="fs-5 fw-bold mt-3">
-                                    QR Scrolling Text Settings
-                                </div>
-                                <div class="mt-3">
-                                    <label for="Threshold1" class="form-label fw-semibold">QR Scrolling Text Speed</label>
-                                    <select class="form-select" aria-label="select example">
-                                        <option value="2" selected>2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-6 ps-0">
-                                            <div class="mt-3">
-                                                <label for="Zone1" class="form-label fw-semibold">QR Title Text Color</label>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" style="background-color: #74b820;" id="basic-addon1">&nbsp;&nbsp;</span>
-                                                    <input type="text" class="form-control" placeholder="#74b820" aria-describedby="basic-addon1"/>
-                                                </div>
-                                            </div>
-                                            <div class="mt-3">
-                                                <label for="Threshold1" class="form-label fw-semibold">QR Feed Padding</label>
-                                                <select class="form-select" aria-label="select example">
-                                                    <option value="30" selected>30</option>
-                                                    <option value="40">40</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <div class="mt-3">
-                                                <label for="Zone1" class="form-label fw-semibold">QR Today's Text Color</label>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text bg-light" id="basic-addon2">@</span>
-                                                    <input type="text" class="form-control" placeholder="#ffffff" aria-describedby="basic-addon2"/>
-                                                </div>
-                                            </div>
-                                            <div class="mt-3">
-                                                <label for="Threshold1" class="form-label fw-semibold">QR Feed Font Size</label>
-                                                <select class="form-select" aria-label="select example">
-                                                    <option value="50" selected>50</option>
-                                                    <option value="40">40</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mt-3">
-                                    <label for="Zone1" class="form-label fw-semibold">QR Scrolling Feed Text</label>
-                                    <input type="text" class="form-control" placeholder="Please scan the QR code, or use our code to connect to the secure Wi-Fi network."/>
-                                </div>
-
-                                <div class="border-bottom my-4"></div>
-                            <!-- </div>
-                            <div class="col-sm-6"> -->
-                                <div class="fs-5 fw-bold mt-3">
-                                    QR Code Settings
-                                </div>
-                                <div class="mt-3">
-                                    <label for="Threshold2" class="form-label fw-semibold">Email Wi-Fi Access Code? - Send the code with the welcome email</label>
-                                    <select class="form-select" aria-label="select example">
-                                        <option value="0" selected>No</option>
-                                        <option value="1">Yes</option>
-                                    </select>
-                                </div>
-                                <div class="mt-3">
-                                    <label for="Threshold3" class="form-label fw-semibold">Security Code Type</label>
-                                    <select class="form-select" aria-label="select example">
-                                        <option value="0" selected>WEP</option>
-                                        <option value="1">WAP</option>
-                                    </select>
-                                </div>
-                                <div class="mt-3">
-                                    <label for="text" class="form-label fw-semibold">SSID (Readonly) - Set in General Settings (Meraki API)</label>
-                                    <input type="text" class="form-control" placeholder="SSID, set in General Settings" />
-                                </div>
-
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-6 ps-0">
-                                            <div class="mt-3">
-                                                <label for="Zone1" class="form-label fw-semibold">QR Foreground Color</label>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" style="background-color: #000000;" id="basic-addon1">&nbsp;&nbsp;</span>
-                                                    <input type="text" class="form-control" placeholder="#000000" aria-describedby="basic-addon1"/>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <div class="mt-3">
-                                                <label for="Zone1" class="form-label fw-semibold">QR Background Color</label>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" style="background-color: #ffffff;" id="basic-addon2">&nbsp;&nbsp;</span>
-                                                    <input type="text" class="form-control" placeholder="#ffffff" aria-describedby="basic-addon2"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <label for="Threshold3" class="form-label fw-semibold">Image Size</label>
-                                    <select class="form-select" aria-label="select example">
-                                        <option value="330" selected>330</option>
-                                        <option value="450">450</option>
-                                    </select>
-                                </div>
-                                <div class="mt-3">
-                                    <label for="Threshold3" class="form-label fw-semibold">Error Correction</label>
-                                    <select class="form-select" aria-label="select example">
-                                        <option value="7" selected>L - [Default] Allows recovery of up to 7% data loss</option>
-                                        <option value="5">5%</option>
-                                    </select>
-                                </div>
-
-                                <div class="border-bottom my-4"></div>
-
-                                
-                                <div class="fs-5 mt-3">
-                                    <span class="fw-bold">
-                                        Password Options
-                                    </span>
-                                    &nbsp;(Generated Randomly)
-                                </div>
-
-                                <div class="mt-3">
-                                    <label for="Threshold3" class="form-label fw-semibold">Characters Options</label>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <select class="form-select w-50" aria-label="select example">
-                                            <option value="8" selected>8</option>
-                                            <option value="10">10</option>
-                                        </select>
-                                        <div>
-                                            <input class="form-check-input" type="checkbox" value="" id="A_Z" checked>
-                                            <label class="form-check-label fw-bold" for="A_Z">
-                                                A-Z
-                                            </label>
-                                        </div>
-                                        <div>
-                                            <input class="form-check-input" type="checkbox" value="" id="a-z">
-                                            <label class="form-check-label fw-bold" for="a-z">
-                                                a-z
-                                            </label>
-                                        </div>
-                                        <div>
-                                            <input class="form-check-input" type="checkbox" value="" id="Numeric" checked>
-                                            <label class="form-check-label fw-bold" for="Numeric">
-                                                Numeric
-                                            </label>
-                                        </div>
-                                        <div>
-                                            <input class="form-check-input" type="checkbox" value="" id="chars">
-                                            <label class="form-check-label fw-bold" for="chars">
-                                                Special Chars
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <label for="Threshold3" class="form-label fw-semibold">QR Code Generation Frequency</label>
-                                    <select class="form-select" aria-label="select example">
-                                        <option value="0" selected>Every Day</option>
-                                        <option value="1">Weekly</option>
-                                    </select>
-                                </div>
-                                <div class="mt-3">
-                                    <label for="Threshold3" class="form-label fw-semibold">Time of Day</label>
-                                    <select class="form-select" aria-label="select example">
-                                        <option value="04" selected>04:00 GMT</option>
-                                        <option value="08">08:00 GMT</option>
-                                    </select>
-                                </div>
+										<div class="mt-3">
+											<label for="Threshold3" class="form-label fw-semibold">Characters Options</label>
+											<div class="d-flex justify-content-between align-items-center">
+												<select class="form-select w-50" aria-label="select example">
+													<option value="8" selected>8</option>
+													<option value="10">10</option>
+												</select>
+												<div>
+													<input class="form-check-input" type="checkbox" value="" id="A_Z" checked>
+													<label class="form-check-label fw-bold" for="A_Z">
+														A-Z
+													</label>
+												</div>
+												<div>
+													<input class="form-check-input" type="checkbox" value="" id="a-z">
+													<label class="form-check-label fw-bold" for="a-z">
+														a-z
+													</label>
+												</div>
+												<div>
+													<input class="form-check-input" type="checkbox" value="" id="Numeric" checked>
+													<label class="form-check-label fw-bold" for="Numeric">
+														Numeric
+													</label>
+												</div>
+												<div>
+													<input class="form-check-input" type="checkbox" value="" id="chars">
+													<label class="form-check-label fw-bold" for="chars">
+														Special Chars
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="mt-3">
+											<label for="Threshold3" class="form-label fw-semibold">QR Code Generation Frequency</label>
+											<select class="form-select" aria-label="select example">
+												<option value="0" selected>Every Day</option>
+												<option value="1">Weekly</option>
+											</select>
+										</div>
+										<div class="mt-3">
+											<label for="Threshold3" class="form-label fw-semibold">Time of Day</label>
+											<select class="form-select" aria-label="select example">
+												<option value="04" selected>04:00 GMT</option>
+												<option value="08">08:00 GMT</option>
+											</select>
+										</div>
+									</div>
+								</div>
                             </div>
-                            <!-- /Right side -->
 
                             <div class="d-flex flex-row-reverse my-4">
                                 <button type="button" class="btn background-green text-light">

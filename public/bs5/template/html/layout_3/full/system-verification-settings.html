@@ -235,7 +235,7 @@
 			<div class="navbar-collapse justify-content-center flex-lg-1 order-2 order-lg-1 collapse" id="navbar_search">
 				<div class="navbar-search flex-fill position-relative mt-2 mt-lg-0 mx-lg-3">
 					<div class="form-control-feedback form-control-feedback-start flex-grow-1" data-color-theme="dark">
-						<input type="text" class="form-control bg-transparent rounded-pill" placeholder="Search" data-bs-toggle="dropdown">
+						<input type="text" style="background: #0f930f" class="form-control text-white rounded-pill" placeholder="Search" data-bs-toggle="dropdown">
 						<div class="form-control-feedback-icon">
 							<i class="ph-magnifying-glass"></i>
 						</div>
@@ -479,7 +479,7 @@
 
 
 	<!-- Breadcrumbs -->
-	<div style="margin-top: 100px;" class="page-header page-header-light shadow">
+	<div style="margin-top: 65px;" class="page-header page-header-light shadow">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<div class="breadcrumb py-2">
@@ -534,7 +534,7 @@
 
 
 	<!-- Page header -->
-	<div class="page-header pt-2">
+	<div class="page-header">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
@@ -849,79 +849,87 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="fs-6 fw-semibold">Wi-Fi Login System Setup*</div>
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-6 fw-semibold">Wi-Fi Login System Setup*</div>
+		
+										<div class="mb-4">
+											We do not recommend changing your System Type if you have been up and running for some time.
+		
+											<div class="my-3">
+												<label for="EmailAddress" class="form-label">System</label>
+												<select class="form-select" aria-label="select example">
+													<option value="0" selected>Standard</option>
+													<option value="1">Custom Made</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                                <div class="mb-4">
-                                    We do not recommend changing your System Type if you have been up and running for some time.
+								<div class="card">
+									<div class="card-body">
+                                		<div class="fs-6 fw-semibold">System Access Code</div>
 
-                                    <div class="my-3">
-                                        <label for="EmailAddress" class="form-label">System</label>
-                                        <select class="form-select" aria-label="select example">
-                                            <option value="0" selected>Standard</option>
-                                            <option value="1">Custom Made</option>
-                                        </select>
-                                    </div>
+										<div class="mb-4">
+											Before a user is able to enter any details into the system you can ask them to enter a code you have provided to them.
+
+											<div class="my-3">
+												<select class="form-select" aria-label="select example">
+													<option value="0" selected>Disabled</option>
+													<option value="1">Enabled</option>
+												</select>
+											</div>
+										</div>
+									</div>
                                 </div>
 
-                                <div class="border-bottom mt-3 mb-4"></div>
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-6 fw-semibold">Enter / Generate Code</div>
 
-                                <div class="fs-6 fw-semibold">System Access Code</div>
+										<div class="mb-4">
+											You can manually enter a code or use the Code Generator to create one for you.
 
-                                <div class="mb-4">
-                                    Before a user is able to enter any details into the system you can ask them to enter a code you have provided to them.
-
-                                    <div class="my-3">
-                                        <select class="form-select" aria-label="select example">
-                                            <option value="0" selected>Disabled</option>
-                                            <option value="1">Enabled</option>
-                                        </select>
-                                    </div>
+											<div class="my-3">
+												<label for="Code" class="form-label">Code</label>
+												<input type="text" placeholder="" disabled />
+											</div>
+										</div>
+									</div>
                                 </div>
 
-                                <div class="border-bottom mt-3 mb-4"></div>
+								<div class="card">
+									<div class="card-body">
+										<div class="fs-6 fw-semibold">Security / Verification Levels</div>
+										
+										<div class="container">
+											<div class="row">
+												<div class="col-sm-9">
 
-                                <div class="fs-6 fw-semibold">Enter / Generate Code</div>
+												</div>
+												<div class="col-sm-3">
 
-                                <div class="mb-4">
-                                    You can manually enter a code or use the Code Generator to create one for you.
+												</div>
+											</div>
+										</div>
 
-                                    <div class="my-3">
-                                        <label for="Code" class="form-label">Code</label>
-                                        <input type="text" placeholder="" disabled />
-                                    </div>
-                                </div>
+										<div class="mb-4">
+											Email checking and confirmation level
 
-                                <div class="border-bottom mt-3"></div>
-                            <!-- </div>
-        
-                            <div class="col-sm-6"> -->
-                                <div class="fs-6 fw-semibold">Security / Verification Levels</div>
-                                
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-9">
+											<div class="my-3">
+												<select class="form-select" aria-label="select example">
+													<option value="0" selected>Level 2</option>
+													<option value="1">Level 3</option>
+												</select>
+											</div>
+										</div>
 
-                                        </div>
-                                        <div class="col-sm-3">
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mb-4">
-                                    Email checking and confirmation level
-
-                                    <div class="my-3">
-                                        <select class="form-select" aria-label="select example">
-                                            <option value="0" selected>Level 2</option>
-                                            <option value="1">Level 3</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="mb-4 text-danger fs-6 fw-bold">
-                                    N.B. If using Level 1 or 3 we advise you add *.apple.com into your walled garden. If using Level 0 or 2 you should remove this from your walled garden.
-                                </div>
+										<div class="mb-4 text-danger fs-6 fw-bold">
+											N.B. If using Level 1 or 3 we advise you add *.apple.com into your walled garden. If using Level 0 or 2 you should remove this from your walled garden.
+										</div>
+									</div>
+								</div>
                             </div>
                             
                             <div class="d-flex flex-row-reverse">

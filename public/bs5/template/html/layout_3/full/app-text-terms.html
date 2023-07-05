@@ -235,7 +235,7 @@
 			<div class="navbar-collapse justify-content-center flex-lg-1 order-2 order-lg-1 collapse" id="navbar_search">
 				<div class="navbar-search flex-fill position-relative mt-2 mt-lg-0 mx-lg-3">
 					<div class="form-control-feedback form-control-feedback-start flex-grow-1" data-color-theme="dark">
-						<input type="text" class="form-control bg-transparent rounded-pill" placeholder="Search" data-bs-toggle="dropdown">
+						<input type="text" style="background: #0f930f" class="form-control text-white rounded-pill" placeholder="Search" data-bs-toggle="dropdown">
 						<div class="form-control-feedback-icon">
 							<i class="ph-magnifying-glass"></i>
 						</div>
@@ -479,7 +479,7 @@
 
 
 	<!-- Breadcrumbs -->
-	<div style="margin-top: 100px;" class="page-header page-header-light shadow">
+	<div style="margin-top: 65px;" class="page-header page-header-light shadow">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<div class="breadcrumb py-2">
@@ -534,7 +534,7 @@
 
 
 	<!-- Page header -->
-	<div class="page-header pt-2">
+	<div class="page-header">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
@@ -886,189 +886,207 @@
 							<div class="row">
 								<div class="col-md-6">
                                     <div class="w-75">
-                                        <div class="fw-bolder mt-4">
-                                            Splash App Settings
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="EmailAddress" class="form-label me-3">App Enabled</label>
-                                            <select style="width: 250px" class="form-select form-select-lg" aria-label="select example">
-                                                <option value="yes">Yes</option>
-                                                <option value="no" selected>No</option>
-                                            </select>
-                                        </div>
-                                        <div class="border-bottom mt-3 mb-4"></div>
-    
-                                        <div class="fw-bold">Login Page Text</div>
-                                        <div class="mt-3">
-                                            <label for="EmailAddress" class="form-label me-3">Enable Access Point Error Message</label>
-                                            <select style="width: 250px" class="form-select form-select-lg" aria-label="select example">
-                                                <option value="yes" selected>Yes</option>
-                                                <option value="no">No</option>
-                                            </select>
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="name" class="form-label">Not on Access Point Error Message</label>
-                                            <input type="text" class="form-control" id="name" placeholder="You must be behind a Cisco Meraki Access Point">
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="name" class="form-label">Intro Text</label>
-                                            <input type="text" class="form-control" id="name" placeholder="FREE WI-FI">
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="name" class="form-label">Intro Sub Text</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Please enter your details below">
-                                        </div>
-    
-                                        <div class="row mt-3">
-                                            <div class="col-md-4">
-                                                <label for="showEmailAddress" class="form-label me-3">Show Email Address</label>
-                                                <select style="width: 120px" class="form-select form-select-lg" id="showEmailAddress" aria-label="select example">
-                                                    <option value="yes" selected>Yes</option>
-                                                    <option value="no">No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="showFirstName" class="form-label me-3">Show First Name</label>
-                                                <select style="width: 120px" class="form-select form-select-lg" id="showFirstName" aria-label="select example">
-                                                    <option value="yes" selected>Yes</option>
-                                                    <option value="no">No</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="showLastName" class="form-label me-3">Show Last Name</label>
-                                                <select style="width: 120px" class="form-select form-select-lg" id="showLastName" aria-label="select example">
-                                                    <option value="yes" selected>Yes</option>
-                                                    <option value="no">No</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="emailPlaceHolder" class="form-label">Email Place Holder Text</label>
-                                            <input type="text" class="form-control" id="emailPlaceHolder" placeholder="Email Address">
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="firstNamePlaceHolder" class="form-label">First Name Place Holder Text</label>
-                                            <input type="text" class="form-control" id="firstNamePlaceHolder" placeholder="First Name">
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="lastNamePlaceHolder" class="form-label">Last Name Place Holder Text</label>
-                                            <input type="text" class="form-control" id="lastNamePlaceHolder" placeholder="Last Name">
-                                        </div>
-                                        <div class="mt-3 d-flex">
-                                            <div>
-                                                <label for="ageRangeEnabled" class="form-label me-3">Age Range Enabled</label>
-                                                <select style="width: 175px" class="form-select form-select-lg" id="ageRangeEnabled" aria-label="select example">
-                                                    <option value="yes" selected>Yes</option>
-                                                    <option value="no">No</option>
-                                                </select>
-                                            </div>
-                                            <div style="margin-top: 40px; margin-left: 20px;" class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="required">
-                                                <label class="form-check-label fw-semibold" for="required">
-                                                    Required
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="ageRange" class="form-label">Age Range Title/Placeholder Text</label>
-                                            <input type="text" class="form-control" id="ageRange" placeholder="Age Range">
-                                        </div>
-                                        <div class="mt-3 d-flex">
-                                            <div>
-                                                <label for="genderEnabled" class="form-label me-3">Gender Enabled</label>
-                                                <select style="width: 175px" class="form-select form-select-lg" id="genderEnabled" aria-label="select example">
-                                                    <option value="yes" selected>Yes</option>
-                                                    <option value="no">No</option>
-                                                </select>
-                                            </div>
-                                            <div style="margin-top: 40px; margin-left: 20px;" class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="genderRequired">
-                                                <label class="form-check-label fw-semibold" for="genderRequired">
-                                                    Required
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="genderTitle" class="form-label">Gender Text</label>
-                                            <input type="text" class="form-control" id="genderTitle" placeholder="Title">
-                                        </div>
-                                        <div class="mt-3 w-75">
-                                            <input type="text" class="form-control" id="genderTitle" placeholder="Mr">
-                                        </div>
-                                        <div class="my-3 w-75">
-                                            <input type="text" class="form-control" id="genderTitle" placeholder="Mrs">
-                                        </div>
+										<div class="card">
+											<div class="card-body">
+												<div class="fw-bolder mt-4">
+													Splash App Settings
+												</div>
+												<div class="mt-3">
+													<label for="EmailAddress" class="form-label me-3">App Enabled</label>
+													<select style="width: 250px" class="form-select form-select-lg" aria-label="select example">
+														<option value="yes">Yes</option>
+														<option value="no" selected>No</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div class="card-body">
+												<div class="fw-bold">Login Page Text</div>
+												<div class="mt-3">
+													<label for="EmailAddress" class="form-label me-3">Enable Access Point Error Message</label>
+													<select style="width: 250px" class="form-select form-select-lg" aria-label="select example">
+														<option value="yes" selected>Yes</option>
+														<option value="no">No</option>
+													</select>
+												</div>
+												<div class="mt-3">
+													<label for="name" class="form-label">Not on Access Point Error Message</label>
+													<input type="text" class="form-control" id="name" placeholder="You must be behind a Cisco Meraki Access Point">
+												</div>
+												<div class="mt-3">
+													<label for="name" class="form-label">Intro Text</label>
+													<input type="text" class="form-control" id="name" placeholder="FREE WI-FI">
+												</div>
+												<div class="mt-3">
+													<label for="name" class="form-label">Intro Sub Text</label>
+													<input type="text" class="form-control" id="name" placeholder="Please enter your details below">
+												</div>
+			
+												<div class="row mt-3">
+													<div class="col-md-4">
+														<label for="showEmailAddress" class="form-label me-3">Show Email Address</label>
+														<select style="width: 120px" class="form-select form-select-lg" id="showEmailAddress" aria-label="select example">
+															<option value="yes" selected>Yes</option>
+															<option value="no">No</option>
+														</select>
+													</div>
+													<div class="col-md-4">
+														<label for="showFirstName" class="form-label me-3">Show First Name</label>
+														<select style="width: 120px" class="form-select form-select-lg" id="showFirstName" aria-label="select example">
+															<option value="yes" selected>Yes</option>
+															<option value="no">No</option>
+														</select>
+													</div>
+													<div class="col-md-4">
+														<label for="showLastName" class="form-label me-3">Show Last Name</label>
+														<select style="width: 120px" class="form-select form-select-lg" id="showLastName" aria-label="select example">
+															<option value="yes" selected>Yes</option>
+															<option value="no">No</option>
+														</select>
+													</div>
+												</div>
+												<div class="mt-3">
+													<label for="emailPlaceHolder" class="form-label">Email Place Holder Text</label>
+													<input type="text" class="form-control" id="emailPlaceHolder" placeholder="Email Address">
+												</div>
+												<div class="mt-3">
+													<label for="firstNamePlaceHolder" class="form-label">First Name Place Holder Text</label>
+													<input type="text" class="form-control" id="firstNamePlaceHolder" placeholder="First Name">
+												</div>
+												<div class="mt-3">
+													<label for="lastNamePlaceHolder" class="form-label">Last Name Place Holder Text</label>
+													<input type="text" class="form-control" id="lastNamePlaceHolder" placeholder="Last Name">
+												</div>
+												<div class="mt-3 d-flex">
+													<div>
+														<label for="ageRangeEnabled" class="form-label me-3">Age Range Enabled</label>
+														<select style="width: 175px" class="form-select form-select-lg" id="ageRangeEnabled" aria-label="select example">
+															<option value="yes" selected>Yes</option>
+															<option value="no">No</option>
+														</select>
+													</div>
+													<div style="margin-top: 40px; margin-left: 20px;" class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="required">
+														<label class="form-check-label fw-semibold" for="required">
+															Required
+														</label>
+													</div>
+												</div>
+												<div class="mt-3">
+													<label for="ageRange" class="form-label">Age Range Title/Placeholder Text</label>
+													<input type="text" class="form-control" id="ageRange" placeholder="Age Range">
+												</div>
+												<div class="mt-3 d-flex">
+													<div>
+														<label for="genderEnabled" class="form-label me-3">Gender Enabled</label>
+														<select style="width: 175px" class="form-select form-select-lg" id="genderEnabled" aria-label="select example">
+															<option value="yes" selected>Yes</option>
+															<option value="no">No</option>
+														</select>
+													</div>
+													<div style="margin-top: 40px; margin-left: 20px;" class="form-check">
+														<input class="form-check-input" type="checkbox" value="" id="genderRequired">
+														<label class="form-check-label fw-semibold" for="genderRequired">
+															Required
+														</label>
+													</div>
+												</div>
+												<div class="mt-3">
+													<label for="genderTitle" class="form-label">Gender Text</label>
+													<input type="text" class="form-control" id="genderTitle" placeholder="Title">
+												</div>
+												<div class="mt-3 w-75">
+													<input type="text" class="form-control" id="genderTitle" placeholder="Mr">
+												</div>
+												<div class="my-3 w-75">
+													<input type="text" class="form-control" id="genderTitle" placeholder="Mrs">
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div class="card-body">
+												<div class="fw-bolder mt-4">
+													Social Media Button Text
+												</div>
+												<div>
+													<div class="mt-3">
+														<label for="facebookLogin" class="form-label">Facebook Text</label>
+														<input type="text" class="form-control" id="facebookLogin" placeholder="Facebook Login">
+													</div>
+													<div class="mt-3">
+														<label for="twitterLogin" class="form-label">Twitter Text</label>
+														<input type="text" class="form-control" id="twitterLogin" placeholder="Twitter Login">
+													</div>
+													<div class="mt-3">
+														<label for="instagramLogin" class="form-label">Instagram Text</label>
+														<input type="text" class="form-control" id="instagramLogin" placeholder="Instagram Login">
+													</div>
+													<div class="mt-3">
+														<label for="linkedInLogin" class="form-label">LinkedIn Text</label>
+														<input type="text" class="form-control" id="linkedInLogin" placeholder="LinkedIn Login">
+													</div>
+													<div class="mt-3">
+														<label for="googleLogin" class="form-label">Google Text</label>
+														<input type="text" class="form-control" id="googleLogin" placeholder="Google Login">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-body">
+												<div class="fw-bold">Error Text</div>
+			
+												<div>
+													<div class="mt-3">
+														<label for="invalidEmail" class="form-label">Invalid Email Text</label>
+														<input type="text" class="form-control" id="invalidEmail" placeholder="Please check you have entered a valid Email Address">
+													</div>
+													<div class="mt-3">
+														<label for="emailLinkExpire" class="form-label">Email Link Expired Text</label>
+														<input type="text" class="form-control" id="emailLinkExpire" placeholder="The email link you are using is out of date. Please re-enter your details.">
+													</div>
+												</div>
+											</div>
+										</div>
                                     </div>
 
-                                    <div class="fw-bolder mt-4">
-                                        Social Media Button Text
-                                    </div>
                                     <div class="w-75">
-                                        <div class="mt-3">
-                                            <label for="facebookLogin" class="form-label">Facebook Text</label>
-                                            <input type="text" class="form-control" id="facebookLogin" placeholder="Facebook Login">
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="twitterLogin" class="form-label">Twitter Text</label>
-                                            <input type="text" class="form-control" id="twitterLogin" placeholder="Twitter Login">
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="instagramLogin" class="form-label">Instagram Text</label>
-                                            <input type="text" class="form-control" id="instagramLogin" placeholder="Instagram Login">
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="linkedInLogin" class="form-label">LinkedIn Text</label>
-                                            <input type="text" class="form-control" id="linkedInLogin" placeholder="LinkedIn Login">
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="googleLogin" class="form-label">Google Text</label>
-                                            <input type="text" class="form-control" id="googleLogin" placeholder="Google Login">
-                                        </div>
-                                    </div>
-                                    <div class="border-bottom my-4"></div>
-									
-                                    <div class="fw-bold">Error Text</div>
+										<div class="card">
+											<div class="card-body">
+												<div class="fw-bold">Continue Page Text</div>
 
-                                    <div class="w-75">
-                                        <div class="mt-3">
-                                            <label for="invalidEmail" class="form-label">Invalid Email Text</label>
-                                            <input type="text" class="form-control" id="invalidEmail" placeholder="Please check you have entered a valid Email Address">
-                                        </div>
-                                        <div class="mt-3">
-                                            <label for="emailLinkExpire" class="form-label">Email Link Expired Text</label>
-                                            <input type="text" class="form-control" id="emailLinkExpire" placeholder="The email link you are using is out of date. Please re-enter your details.">
-                                        </div>
-                                    </div>
-                                    <div class="border-bottom my-4"></div>
+												<div class="mt-3">
+													<label for="headerText" class="form-label">Header Text</label>
+													<input type="text" class="form-control" id="headerText" placeholder="Please wait while we log you in">
+												</div>
 
-                                    <div class="fw-bold">Continue Page Text</div>
+												<div class="fw-bold">(Click the Buttons to insert the relevant information for the user)</div>
+			
+												<div class="mt-3">
+													<label for="emailLinkExpire" class="form-label">Click Login Below Text</label>
+													<div class="d-flex">
+														<input type="text" class="form-control" id="emailLinkExpire" placeholder="The email link you are using is out of date. Please re-enter your details.">
+														<button style="width: 150px" type="button" class="btn border ms-1">Access Time</button>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                                    <div class="w-75">
-                                        <div class="mt-3">
-                                            <label for="headerText" class="form-label">Header Text</label>
-                                            <input type="text" class="form-control" id="headerText" placeholder="Please wait while we log you in">
-                                        </div>
+										<div class="card">
+											<div class="card-body">
+												<div class="fw-bold">Marketing Removal Page Text</div>
+												<div class="mt-3">
+													<label for="marketingHeaderText" class="form-label">Header Text</label>
+													<input type="text" class="form-control" id="marketingHeaderText" placeholder="Marketing Header Text">
+												</div>
+											</div>
+										</div>
                                     </div>
 
-                                    <div class="fw-bold">(Click the Buttons to insert the relevant information for the user)</div>
 
-                                    <div class="mt-3">
-                                        <label for="emailLinkExpire" class="form-label">Click Login Below Text</label>
-                                        <div class="d-flex">
-                                            <input type="text" class="form-control" id="emailLinkExpire" placeholder="The email link you are using is out of date. Please re-enter your details.">
-                                            <button style="width: 150px" type="button" class="btn border ms-1">Access Time</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="border-bottom my-4"></div>
-
-                                    <div class="fw-bold">Marketing Removal Page Text</div>
-                                    <div class="w-75">
-                                        <div class="mt-3">
-                                            <label for="marketingHeaderText" class="form-label">Header Text</label>
-                                            <input type="text" class="form-control" id="marketingHeaderText" placeholder="Marketing Header Text">
-                                        </div>
-                                    </div>
 
 								</div>
                                 <div class="d-flex flex-row-reverse my-4">

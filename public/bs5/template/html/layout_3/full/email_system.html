@@ -237,7 +237,7 @@
 			<div class="navbar-collapse justify-content-center flex-lg-1 order-2 order-lg-1 collapse" id="navbar_search">
 				<div class="navbar-search flex-fill position-relative mt-2 mt-lg-0 mx-lg-3">
 					<div class="form-control-feedback form-control-feedback-start flex-grow-1" data-color-theme="dark">
-						<input type="text" class="form-control bg-transparent rounded-pill" placeholder="Search" data-bs-toggle="dropdown">
+						<input type="text" style="background: #0f930f" class="form-control text-white rounded-pill" placeholder="Search" data-bs-toggle="dropdown">
 						<div class="form-control-feedback-icon">
 							<i class="ph-magnifying-glass"></i>
 						</div>
@@ -481,7 +481,7 @@
 
 
 	<!-- Breadcrumbs -->
-	<div style="margin-top: 100px;" class="page-header page-header-light shadow">
+	<div style="margin-top: 65px;" class="page-header page-header-light shadow">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<div class="breadcrumb py-2">
@@ -536,7 +536,7 @@
 
 
 	<!-- Page header -->
-	<div class="page-header pt-2">
+	<div class="page-header">
 		<div class="page-header-content d-lg-flex">
 			<div class="d-flex">
 				<h4 class="page-title mb-0">
@@ -803,18 +803,6 @@
 								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
 							</ul>
 						</li>
-						<!-- <li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
-								<i class="ph-layout"></i>
-								<span>Wireless Health</span>
-							</a>
-							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Data Limits</a></li>
-								<li class="nav-item"><a href="../../layout_2/full/index.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="index.html" class="nav-link">Camera Settings</a></li>
-								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
-							</ul>
-						</li> -->
 						<li class="nav-item">
 							<a href="webex-team.html" class="nav-link">
 								<i class="ph-users"></i>
@@ -823,18 +811,6 @@
 								</span>
 							</a>
 						</li>
-						<!-- <li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
-								<i class="ph-layout"></i>
-								<span>Webhook</span>
-							</a>
-							<ul class="nav-group-sub collapse" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="../../layout_1/full/index.html" class="nav-link">Data Limits</a></li>
-								<li class="nav-item"><a href="../../layout_2/full/index.html" class="nav-link">Meraki API Settings</a></li>
-								<li class="nav-item"><a href="index.html" class="nav-link">Camera Settings</a></li>
-								<li class="nav-item"><a href="system-verification-settings.html" class="nav-link">System / Verification Settings</a></li>
-							</ul>
-						</li> -->
 						<li class="nav-item">
 							<a href="licence-status.html" class="nav-link">
 								<i class="ph-identification-badge"></i>
@@ -875,59 +851,67 @@
 
 						<div class="card-body pb-0">
                             <div class="fw-semibold mb-2">Wi-Fi Email Marketing</div>
-                            <div class="fw-semibold mb-2">SMTP Settings</div>
-                            <div class="mb-3">
-                                To ensure this feature works correctly you will need to enter the
-                                <span class="fw-semibold">
-                                    SMTP details
-                                </span>
-                                for an account.
-                            </div>
-                            <div class="mb-4">
-                                <label for="EmailAddress" class="form-label">Use Splash Access's SMTP Details</label>
-                                <select style="width: 125px" class="form-select form-select-lg" aria-label="select example">
-                                    <option selected>Yes</option>
-                                    <option value="1">No</option>
-                                </select>
-                            </div>
 
-                            <div class="border-bottom mb-4"></div>
+							<div class="card">
+								<div class="card-body">
+									<div class="fw-semibold mb-2">SMTP Settings</div>
+									<div class="mb-3">
+										To ensure this feature works correctly you will need to enter the
+										<span class="fw-semibold">
+											SMTP details
+										</span>
+										for an account.
+									</div>
+									<div class="mb-4">
+										<label for="EmailAddress" class="form-label">Use Splash Access's SMTP Details</label>
+										<select style="width: 125px" class="form-select form-select-lg" aria-label="select example">
+											<option selected>Yes</option>
+											<option value="1">No</option>
+										</select>
+									</div>
+								</div>
+							</div>
 
-                            <div class="fw-semibold mb-2">Welcome Email</div>
-                            <p>
-                                Once a user has logged in you can send them a welcome email, this could include your latest offer or a special discount code for use on their next visit. This email can either be plain text or HTML depending on how you wish to market your business to your customers.
-                            </p>
+							<div class="card">
+								<div class="card-body">
+									<div class="fw-semibold mb-2">Welcome Email</div>
+									<p>
+										Once a user has logged in you can send them a welcome email, this could include your latest offer or a special discount code for use on their next visit. This email can either be plain text or HTML depending on how you wish to market your business to your customers.
+									</p>
+		
+									<p>
+										<span class="fw-semibold">Days per email</span> - Altering this setting gives you the facility to decide after how many days since the users last login should they be sent another <span class="fw-semibold">Welcome Email.</span>
+									</p>
+									<div class="form-check mt-3">
+										<label class="form-check-label fw-semibold" for="welcomeEmail">
+											Enable Welcome Email
+										</label>
+										<input class="form-check-input" type="checkbox" value="" id="welcomeEmail">
+									</div>
+		
+									<div class="my-3 d-flex">
+										<div style="width: 400px" class="me-2">
+											<label for="EmailAddress" class="form-label">Email Subject</label>
+											<input type="text" class="form-control" id="EmailAddress" placeholder="You are now connected to our Wi-Fi">
+										</div>
+										<div>
+											<label for="EmailAddress" class="form-label">Days per Email</label>
+											<select style="width: 125px" class="form-select form-select-lg" aria-label="select example">
+												<option value="Once" selected>Once</option>
+												<option value="Weekly">Weekly</option>
+											</select>
+										</div>
+									</div>
+		
+									<div class="mb-4">
+										<label class="form-label">Email body text</label>
+										<div id="ckeditor_classic">
+											<p>This is some sample content.</p>
+										</div>
+									</div>
+								</div>
+							</div>
 
-                            <p>
-                                <span class="fw-semibold">Days per email</span> - Altering this setting gives you the facility to decide after how many days since the users last login should they be sent another <span class="fw-semibold">Welcome Email.</span>
-                            </p>
-                            <div class="form-check mt-3">
-                                <label class="form-check-label fw-semibold" for="welcomeEmail">
-                                    Enable Welcome Email
-                                </label>
-                                <input class="form-check-input" type="checkbox" value="" id="welcomeEmail">
-                            </div>
-
-                            <div class="my-3 d-flex">
-                                <div style="width: 400px" class="me-2">
-                                    <label for="EmailAddress" class="form-label">Email Subject</label>
-                                    <input type="text" class="form-control" id="EmailAddress" placeholder="You are now connected to our Wi-Fi">
-                                </div>
-                                <div>
-                                    <label for="EmailAddress" class="form-label">Days per Email</label>
-                                    <select style="width: 125px" class="form-select form-select-lg" aria-label="select example">
-                                        <option value="Once" selected>Once</option>
-                                        <option value="Weekly">Weekly</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="mb-4">
-                                <label class="form-label">Email body text</label>
-                                <div id="ckeditor_classic">
-                                    <p>This is some sample content.</p>
-                                </div>
-                            </div>
 						</div>
 
 					</div>
