@@ -1,11 +1,18 @@
 :root {
-    --green: #60A748;
-    --gray: gray;
+  --green: #397027;
+  --gray: gray;
+  --light-green: #0f930f;
 }
 
 .background-green {
-    background-color: var(--green)!important;
+  background-color: var(--green) !important;
 }
 .background-gray {
-    background-color: var(--gray)!important;
+  background-color: var(--gray) !important;
+}
+
+.subsection .card .card-body {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 50%;
 }
